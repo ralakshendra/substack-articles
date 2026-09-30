@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>How to build an in-email streak counter with AI - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-to-build-an-in-email-streak-counter-with-ai" class="nav-link">How to build an in-email streak counter with AI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#heres-john" class="nav-link">Here's John:</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#an-in-email-streak-counter" class="nav-link">An in-email streak counter</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#how-complicated-is-this-to-do" class="nav-link">How complicated is this to do?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-1-get-chatgpt-to-explain-my-options" class="nav-link">Step 1: Get ChatGPT to explain my options</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-2-click-to-update-the-streak" class="nav-link">Step 2: Click to update the streak</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-3-upload-to-bluehost" class="nav-link">Step 3: Upload to Bluehost</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-4-show-success-page" class="nav-link">Step 4: Show success page</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-5-show-the-streak-in-the-email" class="nav-link">Step 5: Show the streak in the email</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-6-reset-the-streak-if-they-dont-click" class="nav-link">Step 6: Reset the streak if they don't click</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#step-7-uh-oh-theres-a-bug" class="nav-link">Step 7: Uh oh… there's a bug</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#if-you-want-to-copy-exactly-what-ive-done" class="nav-link">If you want to copy exactly what I’ve done…</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#if-you-dont-want-to-copy-exactly-what-ive-done" class="nav-link">If you DON’T want to copy exactly what I’ve done…</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="how-to-build-an-in-email-streak-counter-with-ai">How to build an in-email streak counter with AI</h1>
+<p><em>Shockingly simple way to create tech tools, gadgets, or even games</em></p>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2025-01-08</p>
+<hr />
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!0xrP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cab39da-a61e-40fb-a43d-0c203eb4a539_1260x900.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!0xrP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4cab39da-a61e-40fb-a43d-0c203eb4a539_1260x900.png)</p>
+<p>Strap in.</p>
+<p>Grab a cup of coffee.</p>
+<p>You'll want to spend some time with today's guest post from John Bejakovic.</p>
+<p>If you don't know who John is, he writes a <a href="https://bejakovic.com/">daily email newsletter</a> about direct marketing, copywriting, and his love for the books and screenplays of <a href="https://www.google.com/search?q=William+Goldman">William Goldman</a>.</p>
+<p>A lot of big-name business owners and marketers read his emails every day (including America's copy king, Gary Bencivenga). In December, he launched the <a href="https://bejakovic.com/deh">Daily Email Habit newsletter</a>—to make daily emails feel like a game, so you stick with this habit for the long term.</p>
+<p>And in today's deep dive, John's going to walk you through how he created an in-email streak counter with AI.</p>
+<h1 id="heres-john">Here's John:</h1>
+<hr />
+<p>Email newsletters are a simple and enjoyable way to write online. And paid email newsletters can even be a profitable online business.</p>
+<p>But there’s a problem. And that's getting newsletter subscribers to regularly open, read, and consume your content.</p>
+<p>If subscribers won’t open and read your newsletter, they won’t get value out of what you write. And if they don't get value from what you write, they won't stay subscribed for long, particularly if they have to pay.</p>
+<p>I faced this problem last month, when I launched a new service called <a href="https://bejakovic.com/deh">Daily Email Habit.</a></p>
+<p>Daily Email Habit is effectively a paid, daily newsletter. Every day, Daily Email Habit gives business owners and marketers a new email prompt. The prompt serves as a starting point for subscribers to write their own email to their own email list. Here’s an example prompt:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!tOcy!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf0c54a3-f7e6-4659-b019-5e4ba4189eb0_1052x880.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!tOcy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcf0c54a3-f7e6-4659-b019-5e4ba4189eb0_1052x880.png)</p>
+<p><em>A typical prompt inside a Daily Email Habit email</em></p>
+<p>I wanted to encourage subscribers to not only open and read these daily prompts, but to act on them. To make that happen, I decided to introduce a bit of gamification. I took a strategy from learning apps like DuoLingo. Here’s how it works.</p>
+<h2 id="an-in-email-streak-counter">An in-email streak counter</h2>
+<p>At the bottom of each Daily Email Habit email, subscribers can press a big button. That button marks that they've written and sent their email for the day (scout’s honor). There’s also a streak counter, which displays how long of a streak a subscriber has kept up with his or her emails:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!UhDz!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59299087-f022-4543-bbcf-4915e4358b83_978x260.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!UhDz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F59299087-f022-4543-bbcf-4915e4358b83_978x260.png)</p>
+<p><em>The streak counter at the bottom of each Daily Email Habit email</em></p>
+<p>The result? Here’s a bit of feedback I got from a subscriber named Jakub Červenka. Jakub sells self-development courses online. He started writing daily emails to his email list, using the prompts in Daily Email Habit. He wrote me about his experience so far:</p>
+<blockquote>
+<p><em>I also noticed how not wanting to break the streak is motivating me - even more so than I don’t know, say making potentially money from making a sale to my list… that’s crazy. I am ashamed to admit it, as it is completely irrational, but it’s the truth. And probably not so surprising to anyone in the copywriting world, we know we are not rational beings, but still, this surprised me.</em></p>
+</blockquote>
+<p>Like Jakub says, this bit of gamification can be very motivating. It rewards subscribers for taking action. It trains readers to open my emails because they don’t want to break the streak. It makes them more likely to benefit from the ideas in my newsletter.</p>
+<p>Of course, that’s good for me also:</p>
+<ul>
+<li>
+<p>It keeps open rates sky high and helps with deliverability</p>
+</li>
+<li>
+<p>I get feedback on who my most engaged subscribers are</p>
+</li>
+<li>
+<p>It makes it more likely subscribers stay subscribed for longer</p>
+</li>
+</ul>
+<h2 id="how-complicated-is-this-to-do">How complicated is this to do?</h2>
+<p>Services like ConvertKit or Substack won't give you an in-email streak counter. If you want something like this in your newsletter, you’ll have to do some wizardry on your own.</p>
+<p>The good news is, you don’t need programming knowledge or tech skills. That’s because AI can do it all for you, and guide you through the whole process.</p>
+<p>In this article, I'll walk you through how I did exactly this. I chatted with ChatGPT, and got it to do all the work of creating this bit of gamification in my newsletter.</p>
+<p>I got it to explain my options. I got it to answer my tech questions. I got it to do all the programming I would never have done on my own.</p>
+<p>By the end of this article, you will know how to create an email streak counter in your own newsletter. I'll also give you all my code and instructions on how to use it. If you use ConvertKit for email and Bluehost for web hosting, you can drop in my code and have it work in 2 minutes’ time.</p>
+<p>But what if you don’t use ConvertKit? Or what if you don’t have Bluehost?</p>
+<p>Don’t worry. There’s a bigger point to this article. I want to show you the high-level process I used to get ChatGPT to guide me and work for me. I want to show you how to do the same, even if you use a different email provider or a different web host.</p>
+<p>I also want to stretch your mind a bit. If you want to modify my email streak counter... or create a different kind of gamification... or come up with an entirely new tech tool for yourself and your subscribers... then this article will show you how easy and fast that can be, thanks to AI. So let's get started.</p>
+<h2 id="step-1-get-chatgpt-to-explain-my-options">Step 1: Get ChatGPT to explain my options</h2>
+<p>I had a clear idea of how I wanted my email streak counter to look. But I had no idea of how to make it happen, particularly inside of an email. So I started a new chat with ChatGPT to figure out what my options are. My very first prompt was:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!ffhH!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a94e6c9-7b0c-478d-97ad-3bc5289535ba_1526x670.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!ffhH!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6a94e6c9-7b0c-478d-97ad-3bc5289535ba_1526x670.png)</p>
+<p><em>Step 1: Maybe somebody’s already done this for me?</em></p>
+<p>I won’t reprint the whole chat thread here. The gist was, I went back and forth with ChatGPT for a few more messages. I explained to ChatGPT:</p>
+<ul>
+<li>
+<p>What I want (an email streak counter, as described above)</p>
+</li>
+<li>
+<p>What resources I already have (for example, a web hosting account with Bluehost)</p>
+</li>
+<li>
+<p>What I don’t want (an expensive or complicated tech solution, or a subscription I have to pay for)</p>
+</li>
+</ul>
+<p>It turned out, there wasn’t a plug-and-play solution I could simply use. But ChatGPT gave me a possible solution that would work for me:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!2X7I!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ea3c7fb-35f6-4490-a284-04534c5cf885_1372x486.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!2X7I!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1ea3c7fb-35f6-4490-a284-04534c5cf885_1372x486.png)</p>
+<p><em>ChatGPT proposes a “straightforward” solution</em></p>
+<p>In short, ChatGPT told me I could use my Bluehost web hosting account to host a little web script. If the script were written in the PHP programming language, I could just drop it in and it would work automatically, like this:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!AhAF!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F81e0a9cb-4a30-4000-9233-0bcb439d390b_932x526.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!AhAF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F81e0a9cb-4a30-4000-9233-0bcb439d390b_932x526.png)</p>
+<p><em>A schema of what ChatGPT was proposing to me</em></p>
+<p>The fact is, I don’t know how to write PHP scripts, and I didn’t want to do any programming myself for this project. That’s okay. ChatGPT was willing to do all the work for me.</p>
+<h2 id="step-2-click-to-update-the-streak">Step 2: Click to update the streak</h2>
+<p>At this point, I had just given a description of how I wanted my streak counter to work. I had also figured out the tech environment I wanted to use. With just these two bits of information, ChatGPT was already ready to get to work. I simply asked it:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!yBbq!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff9b5142e-6842-4980-8bf7-546ce3d0725c_1600x342.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!yBbq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff9b5142e-6842-4980-8bf7-546ce3d0725c_1600x342.png)</p>
+<p><em>All the prompt engineering it took to get ChatGPT to program a script for me</em></p>
+<p>That’s all I had to do. As a result, ChatGPT cheerfully produced a 110-line PHP script. The fact is, I would never have taken the time or trouble to figure out how to write this script myself. But ChatGPT did it for me in just a few seconds.</p>
+<h2 id="step-3-upload-to-bluehost">Step 3: Upload to Bluehost</h2>
+<p>The next step was to put this script on my Bluehost server. How to do this? ChatGPT was already ahead of me, and it gave me instructions on what exactly to do, even without me asking:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!gbCN!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94c0331a-a47e-429f-9e7f-b2aac004dc7c_1456x972.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!gbCN!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94c0331a-a47e-429f-9e7f-b2aac004dc7c_1456x972.png)</p>
+<p><em>ChatGPT walks me through what to do with the script it’s just written for me</em></p>
+<p>I followed these instructions. Within 10 minutes of starting this entire project, I was already getting somewhere.</p>
+<p>The PHP script that ChatGPT had written for me was sitting inside my Bluehost account. That meant it was accessible via the web. I could simply call it via a URL.</p>
+<p>In other words, I could put a link inside my email, formatted as a button, which would call this script when clicked. The script would access and update a local database that stored user streaks.</p>
+<p>After the script was done, it would show the following web page. If you look close, you can see the email streak (1) for a dummy user (user@example.com), in a data format known as JSON:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!feYU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe16be3a0-215f-4035-9fb3-8958bcc65953_1600x905.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!feYU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe16be3a0-215f-4035-9fb3-8958bcc65953_1600x905.png)</p>
+<p><em>A functional but ugly first draft of the result page</em></p>
+<h2 id="step-4-show-success-page">Step 4: Show success page</h2>
+<p>This was clearly a step in the right direction. But the technical printout above was not what I wanted to show to subscribers for real. So I told ChatGPT what I wanted to do instead:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!-6Sc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F93839a1f-b84f-4bcf-baf4-95bb6068d54e_1600x1045.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!-6Sc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F93839a1f-b84f-4bcf-baf4-95bb6068d54e_1600x1045.png)</p>
+<p><em>Asking ChatGPT to create a nicer V2 of the result page</em></p>
+<p>ChatGPT modified the initial PHP script it gave me to show a results page like I asked. I uploaded the new version to BlueHost using the same approach as in step 3.</p>
+<p>I also updated the image to show a still from a Looney Tunes cartoon because I found it fun and lighthearted. With this new script, when a subscriber clicks the button in the email, the following page appears:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!YeNc!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f62907d-42e3-44da-8127-78ec0f84b99c_1600x905.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!YeNc!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1f62907d-42e3-44da-8127-78ec0f84b99c_1600x905.png)</p>
+<p><em>The final version of the result page</em></p>
+<p>I had one more issue:</p>
+<p>Up to this point, I had just been using a placeholder email in the URL. Of course, I wanted each user to see his or her own streak, not a placeholder. In order to do that, I’d need to add their email address to the URL in the button.</p>
+<p>In ConvertKit, this is done with the “{{ subscriber.email_address | url_encode }}” shortcode:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!UY2h!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5f13ac7-4e7c-428a-8c42-8600e495f50e_1366x768.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!UY2h!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe5f13ac7-4e7c-428a-8c42-8600e495f50e_1366x768.png)</p>
+<p><em>Passing the subscriber’s email address from the email to my streak tracking script</em></p>
+<h2 id="step-5-show-the-streak-in-the-email">Step 5: Show the streak in the email</h2>
+<p>At this point, I already had a functional streak tracker. Users could click the button at the bottom of the email to keep their streak going. This opened up a webpage that shows them their current streak.</p>
+<p>Of course, I still hadn't done the most tricky part. After all, a button and a webpage that show the streak are nice. But what I really wanted was to show the streak inside the email. This way, subscribers who open the email would want to keep their streak alive.</p>
+<p>But is that even possible? Could I somehow include data from my own BlueHost account in an email that’s sent out by ConvertKit? I had no idea. So once again, I asked ChatGPT:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!Lii3!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd07baf38-90ba-4b73-bb0c-1873b8d1a326_1594x682.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!Lii3!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fd07baf38-90ba-4b73-bb0c-1873b8d1a326_1594x682.png)</p>
+<p><em>I ask ChatGPT to guide me through a tricky step of my email streak counter</em></p>
+<p>As ChatGPT informed me, email as a tech platform is very limited. A normal web page or an app can run local scripts or call remote servers. But an email in your inbox cannot.</p>
+<p>Fortunately, emails can load images from URLs. ChatGPT explained how I could use this as a workaround:</p>
+<ul>
+<li>
+<p>I could add a new PHP script to my BlueHost account</p>
+</li>
+<li>
+<p>This script would take a subscriber’s streak and generate an image on the fly that shows that streak</p>
+</li>
+<li>
+<p>I could then show that image inside my email</p>
+</li>
+</ul>
+<p>Let me pause to once again repeat the crucial point:</p>
+<p>There’s no way I would ever have bothered to write this image-generation code if I had to figure it out myself. But it was super easy with ChatGPT. In fact, I didn’t even have to ask — ChatGPT already wrote up a script for me as soon as I asked if it was possible:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!B1GU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1334ada7-daa9-44ea-8b5d-fa2fe11baaaf_1488x684.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!B1GU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F1334ada7-daa9-44ea-8b5d-fa2fe11baaaf_1488x684.png)</p>
+<p><em>ChatGPT writes a script to dynamically turn text into an image</em></p>
+<p>Yes, it took a bit of fiddling until the streak image looked exactly how I wanted. But that fiddling was really just more talking to ChatGPT. After tweaking the color and the font, the resulting streak image looked like this:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!gkDz!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3502038-c791-4625-a3b2-419eb4554c21_400x100.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!gkDz!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc3502038-c791-4625-a3b2-419eb4554c21_400x100.png)</p>
+<p><em>A dynamically generated image that shows a user’s streak</em></p>
+<p>Again, I uploaded this second script to BlueHost using the same process as in Step 2 above. I now had a second URL I could call from my email, which would return a PNG image that showed a user’s streak.</p>
+<p>In ConvertKit, I could use an HTML snippet to show an image. This source for this image would be the URL of my PHP script:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!Fvbp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e48362f-dbe4-40b3-a293-024fdabe318a_1366x768.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!Fvbp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9e48362f-dbe4-40b3-a293-024fdabe318a_1366x768.png)</p>
+<p><em>Adding in an HTML image tag in ConvertKit, which calls my PHP script for the streak image</em></p>
+<p>The result of all this work was that I had a working streak counter. A user could click on the button to update it. My script on BlueHost would update the user’s streak if 24 hours had passed since the previous update. And the user could see his updated streak in the next email, like this:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!INpD!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa987c182-c995-4f1f-b0b1-04f6fc2c7461_1248x1036.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!INpD!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa987c182-c995-4f1f-b0b1-04f6fc2c7461_1248x1036.png)</p>
+<p><em>The result of all of ChatGPT’s hard work</em></p>
+<h2 id="step-6-reset-the-streak-if-they-dont-click">Step 6: Reset the streak if they don't click</h2>
+<p>There was one last piece. If a subscriber didn’t click on the streak button within 24 hours, I wanted the streak to be reset to 0. I explained my goals to ChatGPT, and it told me what to do:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!67KA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f3498b0-7cff-45c0-bf53-8d995831ac4c_1592x462.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!67KA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0f3498b0-7cff-45c0-bf53-8d995831ac4c_1592x462.png)</p>
+<p><em>Asking ChatGPT to help me with the last step of the email streak counter</em></p>
+<p>In short, ChatGPT explained I’d need a third script. This script would be run every 24 hours by a “cron” job within my BlueHost account. Basically, this was a way to schedule a script to run at a set time, every day.</p>
+<p>As you can guess by now, I had no idea how to do this. Again, ChatGPT gave me the new script. And as usual, it told me how to go on Bluehost and schedule this script to run regularly:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!s0dy!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9cac05ab-a36d-40bf-89f6-bcfaedd45d6d_1522x870.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!s0dy!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9cac05ab-a36d-40bf-89f6-bcfaedd45d6d_1522x870.png)</p>
+<p><em>Another patient, detailed response from ChatGPT, walking me through the next step</em></p>
+<p>I did as ChatGPT told me. And with this third and final script, I was done!</p>
+<p>Users could now see their streak in each email. They could click on a button to keep their streak going. And if they didn’t click the button in the 24 hours after my email went out, then their streak would be reset to 0.</p>
+<p>Triumph! Except of course…</p>
+<h2 id="step-7-uh-oh-theres-a-bug">Step 7: Uh oh… there's a bug</h2>
+<p>I launched Daily Email Habit on Monday, November 25, 2024. The streak counter worked brilliantly for the first 24 hours. And then, by mid-afternoon on Tuesday, I started to get complaints:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!L7AA!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04387f3c-da18-4b9a-b03e-fe996f8697e2_1280x720.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!L7AA!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F04387f3c-da18-4b9a-b03e-fe996f8697e2_1280x720.png)</p>
+<p><em>Bug reports pour in for version 1 of my email streak counter</em></p>
+<p>On closer look, It turned out I had done a bad job telling ChatGPT what to do. ChatGPT, obedient and responsible as it is, did exactly as I told it to do.</p>
+<p>My mistake was telling ChatGPT that the streak could only be updated once every 24 hours. That was just flat-out wrong.</p>
+<p>For example, a user could click to update their streak at 5pm on Monday and 2pm on Tuesday. That’s less than 24 hours apart, And yet, it should be perfectly fine. In this situation, the streak should be updated, but in the first version of the code, it was not.</p>
+<p>I realized I should have told ChatGPT something different. The streak should only be updated once in every 24-hour block, starting from the time my daily email went out.</p>
+<p>So I went in explained my mistake to ChatGPT, and I told it to rewrite the first script I had created:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!GdDV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4a75ed19-d5c4-49cc-9657-443e82c1b425_1266x772.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!GdDV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4a75ed19-d5c4-49cc-9657-443e82c1b425_1266x772.png)</p>
+<p><em>I give ChatGPT more thoughtful instructions for creating the streak tracker</em></p>
+<p>Once again, ChatGPT politely and patiently rewrote my PHP script. I uploaded it to BlueHost. And with this change, I really was finished.</p>
+<p>My paid newsletter, Daily Email Habit, has been running for almost three weeks now. The streak counter has worked flawlessly ever since. Subscribers are using the streak counter and are getting hooked. As a result, they are opening, engaging with, and benefitting from my newsletter.</p>
+<h2 id="if-you-want-to-copy-exactly-what-ive-done">If you want to copy exactly what I’ve done…</h2>
+<p>I’ve shown you how I got ChatGPT to create a bit of tech magic for me, and guide me through every step of setting it up.</p>
+<p>If you like, you can take the code that ChatGPT has written up for me and drop it into your own hosting provider. It should work out of the box. You can find the code below, along with instructions on how to deploy it on BlueHost:</p>
+<h3 id="click-here-to-download-the-full-code-and-instructions-for-the-streak-tracker"><a href="https://drive.google.com/file/d/1gMlUSrDLTLj0HLTM9McYNynIRzP7sXAU/view?usp=sharing">Click here to download the full code and instructions for the streak tracker</a></h3>
+<p>But what if you don’t use BlueHost? Or anything like BlueHost?</p>
+<p>I could try to write up a general guide for how to get set up online so you can have a place to run little scripts like this.</p>
+<p>But that guide wouldn't be as good as simply pointing you to ChatGPT. You can ask and get feedback that’s customized to your specific situation. If you need a starting point, here’s what I asked it, which resulted in a world of good options, both paid and free:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!hGiV!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff66c1e90-45fb-4a30-a630-01fee0d7e895_1600x1141.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!hGiV!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff66c1e90-45fb-4a30-a630-01fee0d7e895_1600x1141.png)</p>
+<p><em>ChatGPT offers advice about BlueHost replacements for hosting your tech tools</em></p>
+<p>This leads me to the final point of this article.</p>
+<h2 id="if-you-dont-want-to-copy-exactly-what-ive-done">If you DON’T want to copy exactly what I’ve done…</h2>
+<p>Perhaps you don't want to copy my streak counter, the way I had ChatGPT create it. Maybe you want to do something a little different, or something very different. That’s great. In fact, it’s the bigger point I hope to get across to you.</p>
+<p>ChatGPT now makes it shockingly easy and quick to create little tech tools or gadgets or even games.</p>
+<p>Come across a cool engagement trick in your favorite app? Or see a neat tool on your favorite website?</p>
+<p>ChatGPT can help you create it for your own business, and for your own audience. All you have to do is ask.</p>
+<h3 id="heres-a-prompt-to-help-you-get-started">Here’s a prompt to help you get started:</h3>
+<pre><code>Help me brainstorm ideas for little scripts, tools, programs, or games I can create for my audience to complement my content and make it more engaging. Base them on gamification examples from language learning apps, educational courses, etc.
+
+Here's a breakdown of my audience:
+
+[insert a few points to describe your audience]
+
+Here are my available resources:
+
+[describe your available tech resources, such as your email service, a web hosting account you have, etc.]
+</code></pre>
+<p>Here’s what happened when I ran this prompt with the details of my own audience and limited tech resources:</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!Hcmp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26c1bac8-87e8-429c-99b0-84cdc5752781_1592x1228.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!Hcmp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F26c1bac8-87e8-429c-99b0-84cdc5752781_1592x1228.png)</p>
+<p>ChatGPT gave me a list of 10 ideas, including:</p>
+<ul>
+<li>
+<p>Offer Generator: Generates creative newsletter or product offers based on user input (e.g., their niche, goals, audience pain points)</p>
+</li>
+<li>
+<p>Newsletter Headline Challenge: A game that provides users with a topic or product and challenges them to write a compelling headline or subject line in 60 seconds</p>
+</li>
+<li>
+<p>Self-Promotion Confidence Quiz: A quiz to identify specific hang-ups about self-promotion and suggest tailored solutions</p>
+</li>
+<li>
+<p>"Write a Bestseller" Simulation: A choose-your-own-adventure-style game where users make decisions about writing, promoting, and selling a newsletter or product</p>
+</li>
+<li>
+<p>"Promote Yourself" Bingo: A bingo card with self-promotion tasks (e.g., "Share a personal story," "Pitch a product," "Send a CTA")</p>
+</li>
+</ul>
+<p>Just one such little tool or extension can make your audience’s experience much nicer and more fun. As a result, it can also create a little moat around what you offer, to protect you from competition.</p>
+<p>Once you hit upon an idea for a little tech tool to help yourself or your subscribers, follow the basic process I laid out above:</p>
+<ol>
+<li>
+<p>Chat with ChatGPT to start. Ask it what your options are, based on your goal and your tech resources (or lack of resources).</p>
+</li>
+<li>
+<p>Pick a tech approach that sounds feasible to you.</p>
+</li>
+<li>
+<p>Get ChatGPT to do all the technical work, to tell you how to use it or deploy it, and to fix any bugs if they pop up.</p>
+</li>
+<li>
+<p>Rub your hands together, and marvel at all you can now create.</p>
+</li>
+</ol>
+<p>Like I said, it’s shockingly easy and quick to do this, even if you have no tech skills. It’s only a matter of sitting down and having ChatGPT guide you by the hand through each step.</p>
+<p>Little tech tools like this can make your written content more fun, engaging, and useful. This helps turn readers into long-term fans and customers. And ultimately, it helps turn your writing into a sustainable, profitable online business.</p>
+<hr />
+<h3 id="pswhat-did-you-think-of-todays-newsletter"><em>PS…What did you think of today’s newsletter?</em></h3>
+<p><em>❤️ <strong>Loved it</strong>. <a href="https://writewithai.substack.com/leaderboard?&amp;referrer_token=igmn&amp;utm_source=post">Refer it to a friend</a> or drop a 🙌 below.</em></p>
+<p><em>🫤 <strong>Meh.</strong> You can unsubscribe <a href="https://writewithai.substack.com/account/cancel">here</a>. Or manage your subscription <a href="https://writewithai.substack.com/account">here</a>.</em></p>
+<p><em>🥳 <strong>I’m new here.</strong> Welcome! <a href="https://writewithai.substack.com/p/free-5-day-email-course-to-become">Grab these 3 resources to get started writing with AI.</a></em></p>
+<p><em>🤩 <strong>Give me more.</strong> Check out reader favorites <a href="https://writewithai.substack.com/archive?sort=top">here</a> (and all our free &amp; paid products <a href="https://writewithai.substack.com/t/products">here</a>).</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

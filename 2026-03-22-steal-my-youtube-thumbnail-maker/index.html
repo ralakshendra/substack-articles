@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Steal my YouTube thumbnail maker - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#steal-my-youtube-thumbnail-maker" class="nav-link">Steal my YouTube thumbnail maker</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#steal-my-youtube-thumbnail-maker_1" class="nav-link">Steal my YouTube thumbnail maker</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="steal-my-youtube-thumbnail-maker">Steal my YouTube thumbnail maker</h1>
+<p><em>How I built a custom app with Claude in 4-steps</em></p>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2026-03-22</p>
+<hr />
+<h1 id="steal-my-youtube-thumbnail-maker_1">Steal my YouTube thumbnail maker</h1>
+<h3 id="how-i-built-a-custom-app-with-claude-in-4-steps">How I built a custom app with Claude in 4-steps</h3>
+<p>[</p>
+<p><img alt="Nicolas Cole's avatar" src="https://substackcdn.com/image/fetch/$s_!ogyf!,w_36,h_36,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F94fa56a8-8238-40e8-95e7-ff4e7c1df212_400x400.jpeg" /></p>
+<p>](https://substack.com/@nicolascole77)[</p>
+<p><img alt="Dickie Bush's avatar" src="https://substackcdn.com/image/fetch/$s_!XQBp!,w_36,h_36,c_fill,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe21f7d66-8c61-48a9-a331-bd51ec13047d_408x353.jpeg" /></p>
+<p>](https://substack.com/@dickiebush)</p>
+<p><a href="https://substack.com/@nicolascole77">Nicolas Cole</a> and <a href="https://substack.com/@dickiebush">Dickie Bush</a></p>
+<p>Mar 22, 2026</p>
+<p>∙ Paid</p>
+<p>38</p>
+<p>1</p>
+<p>Share</p>
+<p>Steve Jobs wore the same black turtleneck, Levi’s 501s, and New Balance sneakers every single day.</p>
+<p>He refused to waste a single brain cell on decisions that didn’t matter. I thought about that last week while I was 45 minutes deep into making a YouTube thumbnail.</p>
+<p>For one thumbnail. I cycled through:</p>
+<ul>
+<li>
+<p>DALL-E (looked like a stock photo from 2009)</p>
+</li>
+<li>
+<p>Gemini (closer, but still not right)</p>
+</li>
+<li>
+<p>Canva (dragging boxes and fighting with templates)</p>
+</li>
+</ul>
+<p>I needed a preview image for a live session replay of Substack Starter Sprint (just one bootcamp in a series we’re running every month for the rest of the year).</p>
+<p>Which means I’d be doing this same 30–45 minute process again and again. So I stopped trying to “get better at making thumbnails” and had Claude build me a custom app that handles the whole thing in under 60 seconds. Now when I need a thumbnail, I open the tool, upload a photo, pick a template, and download.</p>
+<p>Today I want to show you exactly how I built the app, because the same approach works for any repetitive task that’s quietly eating your creative energy.</p>
+<p>At the end I’ll give you my thumbnail maker so you never need to use Canva for your YouTube preview images again.</p>
+<p>Let’s dive in!</p>
+<h3 id="step-1-describe-the-problem-youre-trying-to-solve-for-claude">Step 1: Describe the problem you’re trying to solve for Claude.</h3>
+<p>I used Claude Cowork to build this app, but you can use regular Claude too.</p>
+<p>Either way, your first job is to explain what you’re trying to do, why the current options frustrate you, and what your ideal version looks like.</p>
+<p>Here’s the prompt I used:</p>
+<blockquote>
+<p><em>I make YouTube thumbnails every week and I’m tired of using Canva.</em></p>
+<p><em>I want a simple tool that helps me:</em></p>
+<ul>
+<li>
+<p><em>Upload a photo</em></p>
+</li>
+<li>
+<p><em>Add a title</em></p>
+</li>
+<li>
+<p><em>Pick from a few proven YouTube templates</em></p>
+</li>
+<li>
+<p><em>And then download the thumbnail as an optimized image for YouTube</em></p>
+</li>
+</ul>
+<p><em>What ideas do you have?</em></p>
+</blockquote>
+<p>That last part matters.</p>
+<p>When you ask Claude for ideas, you’ll immediately see how it thinks about your project. Collaborate on your idea until your happy with the direction.</p>
+<p><strong>Pro Tip:</strong> Claude works way better when it can see what you’re aiming for.</p>
+<p>So if you have a screenshot of the end result you want, even if it’s rough sketch on paper, upload it.</p>
+<p>I sent Claude a screenshot of a thumbnail I’d made manually and said:</p>
+<p><em>“Here’s the style I’m going for.”</em></p>
+<p>You’d be surprised how much better the output gets when Claude has a visual reference.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!HNMq!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8685f248-9b28-45ff-aec4-30c810e27c7f_3020x1714.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!HNMq!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8685f248-9b28-45ff-aec4-30c810e27c7f_3020x1714.png)</p>
+<h3 id="step-2-after-claude-builds-the-first-version-tell-it-exactly-whats-missing">Step 2: After Claude builds the first version, tell it exactly what’s missing.</h3>
+<p>Every time I’ve asked Claude to build an app for me, I’m blown away by the result.</p>
+<p>But the second you start to interact with your new tool, you’ll see all the details you missed.</p>
+<p>So, your next step is to give Claude some feedback:</p>
+<blockquote>
+<p><em>I want 8 different layout templates instead of 2. Each one should have a spot for a photo, a title, AND a subtitle, and a small logo in the corner.</em></p>
+<p><em>I also want choose colors for the background.</em></p>
+</blockquote>
+<p>The more specific you are, the fewer rounds of back-and-forth.</p>
+<p>But beware of making too many changes in a single prompt.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!dRig!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F688b7fdc-44b6-4c70-9077-aac94efc68c8_694x1180.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!dRig!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F688b7fdc-44b6-4c70-9077-aac94efc68c8_694x1180.png)</p>
+<h3 id="step-3-isolate-your-changes-by-adding-one-feature-at-a-time">Step 3: Isolate your changes by adding one feature at a time</h3>
+<p>This keeps Claude focused and it keeps you from turning your app into Frankenstein.</p>
+<p>Avoid dumping 15 requests into one message.</p>
+<p>Instead, ask for one feature per prompt. Test it. Then ask for the next one.</p>
+<ul>
+<li>
+<p><em>“Add a text effect option. I want to choose between no effect, a drop shadow, or an outline around the text.”</em></p>
+</li>
+<li>
+<p><em>“Add a badge option. A small colored circle in the corner that says ‘NEW’ or ‘LIVE’ or whatever I type in.”</em></p>
+</li>
+<li>
+<p><em>“Let me control the font size with a slider instead of typing in a number.”</em></p>
+</li>
+<li>
+<p><em>“Add an AI prompt generator for background images.”</em></p>
+</li>
+</ul>
+<p>Each one took about 30 seconds. And because I tested between each prompt, I caught problems early.</p>
+<p><strong>Note:</strong> Describing UI problems in words is a challenge. But Claude can see images. So just screenshot what you want to change and send it. I sent about 15 during my build and each fix took under a minute.</p>
+<blockquote>
+<p><em>“The text is invisible on this template when I use the orange color palette. See screenshot. Can you fix the contrast so the text is always readable?”</em></p>
+</blockquote>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!arC1!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37abacd0-c5f8-49cf-978b-f2c028934ecc_2266x1678.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!arC1!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F37abacd0-c5f8-49cf-978b-f2c028934ecc_2266x1678.png)</p>
+<h3 id="step-4-once-the-basic-tool-works-apply-a-brand-style-to-make-it-yours">Step 4: Once the basic tool works, apply a brand style to make it yours.</h3>
+<p>I uploaded our PGA brand style guide and said:</p>
+<blockquote>
+<p>_“Attached are my brand colors and fonts.  </p>
+<p>Add these as preset color options and make this font the default.”_</p>
+</blockquote>
+<p>Now every thumbnail I make automatically matches my brand.</p>
+<p>If you don’t have a brand style guide, pick a brand you like and ask Claude to model the style.</p>
+<p>For example:</p>
+<p><em>“This looks amazing. But I want to use Substack brand colors.”</em></p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!9nFj!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2962f65d-6562-460e-9096-260596f8ed47_1856x1094.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!9nFj!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2962f65d-6562-460e-9096-260596f8ed47_1856x1094.png)</p>
+<h3 id="thats-it">That’s it.</h3>
+<p>You can do this for anything.</p>
+<ul>
+<li>
+<p>A client proposal generator.</p>
+</li>
+<li>
+<p>A social media caption tool.</p>
+</li>
+<li>
+<p>A pricing calculator.</p>
+</li>
+<li>
+<p>An invoice template.</p>
+</li>
+</ul>
+<p>Whatever task you keep doing the slow way, Claude can build you a custom tool for it in an afternoon.</p>
+<p>Two hours of prompting saves me 20+ minutes every single week, forever.</p>
+<p>You can use the app here.👇</p>
+<h3 id="click-here-to-create-simple-youtube-thumbnails-for-free"><a href="https://youtubethumbnailgenerator-pearl.vercel.app/">Click here to create simple YouTube thumbnails for free.</a></h3>
+<p>Enjoy!</p>
+<p>Chat soon,</p>
+<p>Dickie &amp; Cole</p>
+<p><em>Co-Founders of:</em></p>
+<ul>
+<li>
+<p><em><a href="https://writewithai.substack.com/">Write With AI</a></em></p>
+</li>
+<li>
+<p><em><a href="https://www.ship30for30.com/">Ship 30 For 30</a></em></p>
+</li>
+<li>
+<p><em><a href="https://www.premiumghostwritingacademy.com/">Premium Ghostwriting Academy</a></em></p>
+</li>
+<li>
+<p><em><a href="https://typeshare.co/">Typeshare</a></em></p>
+</li>
+<li>
+<p><em><a href="https://www.ghostbase.com/">Ghostbase</a></em></p>
+</li>
+</ul>
+<hr />
+<p><strong>PS</strong> - Every week we cover topics like this in our Tuesday AI &amp; Tech Clinic with members inside our AI Writing Skool.</p>
+<p>So if you have more questions here, would love to workshop them with you live.</p>
+<p>You can sign up here.👇</p>
+<p><strong><a href="https://ship.samcart.com/products/aiws-monthly">Click here to enroll in AI Writing Skool and start automating your daily tasks.</a></strong></p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!0PHP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5cb8b5dd-656a-436a-9840-4c2d22b02a0e_1196x984.png" /></p>
+<p>](https://ship.samcart.com/products/aiws-monthly)</p>
+<p>38</p>
+<p>1</p>
+<p>Share</p>
+<p>PreviousNext</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

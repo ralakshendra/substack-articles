@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Tweets To Templates: Train ChatGPT To Reverse Engineer Viral Tweets - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#tweets-to-templates-train-chatgpt-to-reverse-engineer-viral-tweets" class="nav-link">Tweets To Templates: Train ChatGPT To Reverse Engineer Viral Tweets</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ahoy-digital-writers" class="nav-link">Ahoy, Digital Writers!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#just-like-we-teach-in-ship-30-for-30-when-you-see-something-that-works-you-reverse-engineer-it-into-a-template" class="nav-link">Just like we teach in Ship 30 for 30, when you see something that works, you reverse engineer it into a template.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#originality-is-an-illusion-all-writers-and-creators-are-influenced-by-the-work-of-others" class="nav-link">Originality is an illusion. All writers and creators are influenced by the work of others.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#playing-mad-libs-works-but-understanding-why-a-template-works-is-how-you-really-turn-up-the-heat" class="nav-link">Playing “Mad-Libs” works. But understanding WHY a template works is how you really turn up the heat.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-to-find-twitter-hooks-that-capture-attention-and-are-worth-reverse-engineering" class="nav-link">How to Find Twitter Hooks That Capture Attention (And Are Worth Reverse Engineering)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-1-follow-50-interesting-accounts" class="nav-link">Step 1: Follow 50 interesting accounts.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-2-find-the-highest-performing-content-for-big-name-creators-in-and-out-of-our-niche" class="nav-link">Step 2: Find the highest-performing content for big-name creators in (and out) of our niche.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-3-train-chatgpt-to-templatize-scroll-stopping-hooks" class="nav-link">Step 3: Train ChatGPT to “templatize” scroll-stopping hooks.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#copypaste-the-prompt-into-a-new-window-in-chatgpt" class="nav-link">Copy/paste the prompt into a new window in ChatGPT.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#check-out-the-results" class="nav-link">Check out the results!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-4-brainstorm-3-new-hooks-using-your-niche-topic" class="nav-link">Step 4: Brainstorm 3 new hooks using your niche topic.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#boom" class="nav-link">Boom!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="tweets-to-templates-train-chatgpt-to-reverse-engineer-viral-tweets">Tweets To Templates: Train ChatGPT To Reverse Engineer Viral Tweets</h1>
+<p><em>This is how you increase your odds of getting 1M views.</em></p>
+<p><strong>Author:</strong> Dickie Bush<br />
+<strong>Date:</strong> 2023-05-31</p>
+<hr />
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!HiNw!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5e0abc97-b7ef-4ea9-9786-0a1a9b654d58_1260x900.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!HiNw!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F5e0abc97-b7ef-4ea9-9786-0a1a9b654d58_1260x900.png)</p>
+<h1 id="ahoy-digital-writers">Ahoy, Digital Writers!</h1>
+<p>Today we want to help you create your own library of viral Twitter templates.</p>
+<p>Going viral on Twitter always comes down to the hook you use.</p>
+<p>Like it or not, this is the most important factor in whether your tweet, thread, or post sees success or goes nowhere. And if you want to increase your odds of going viral, we recommend using templates crafted from proven hooks.</p>
+<h1 id="just-like-we-teach-in-ship-30-for-30-when-you-see-something-that-works-you-reverse-engineer-it-into-a-template">Just like we teach in <a href="http://ship30for30.com/">Ship 30 for 30</a>, when you see something that works, you reverse engineer it into a template.</h1>
+<p>Which is why we want to help you find, create, and build a library of hook templates you can leverage over and over to grab you audience’s attention—so you’ll never have to question how to give your ideas meaningful structure ever again.</p>
+<p>But first, here’s what you need to know:</p>
+<h1 id="originality-is-an-illusion-all-writers-and-creators-are-influenced-by-the-work-of-others">Originality is an illusion. All writers and creators are influenced by the work of others.</h1>
+<p>Creating and using templates is not about copying someone else's work.</p>
+<p>Remixing ideas is a natural (and valuable) part of the creative process. It’s about taking the bits and pieces, the techniques, and the frames that resonate with you and then combining them with your perspective for your niche to create something distinctively your own.</p>
+<p>Leveraging templates is about expanding your creative toolkit.</p>
+<p>But just using template is not enough.</p>
+<h1 id="playing-mad-libs-works-but-understanding-why-a-template-works-is-how-you-really-turn-up-the-heat">Playing “Mad-Libs” works. But understanding WHY a template works is how you really turn up the heat.</h1>
+<p>When you unpack every single word in a viral hook, you learn to use it deliberately (and see it differently).</p>
+<p>The mistake many new writers make is using templates as a crutch instead of a catalyst—blindly following a strict formula. This results in generic, forced, or insincere-sounding content. And ultimately drives readers away. Instead templates should be used as tools for guidance and inspiration.</p>
+<p>To get someone’s attention, you have to first understand their thinking.</p>
+<ul>
+<li>
+<p>Why are people the way they are?</p>
+</li>
+<li>
+<p>Why do people do the things they do?</p>
+</li>
+<li>
+<p>Why do people have the fears they have and?</p>
+</li>
+<li>
+<p>Why do people desire the things they desire?</p>
+</li>
+</ul>
+<p>Then you need you need to understand how to set the reader’s expectations using the 5 elements of <a href="https://www.ship30for30.com/post/how-to-write-headlines-readers-cant-help-but-click">writing an effective headline</a>.</p>
+<p>And once you know how to set their expectations, you need to know how to hook the reader using the <a href="https://writewithai.substack.com/p/the-1-chip-rule-train-chatgpt-to">6 proven ways</a> to write an engaging first sentence.</p>
+<ul>
+<li>
+<p>Open with 1 strong, declarative sentence.</p>
+</li>
+<li>
+<p>Open with a thought-provoking question.</p>
+</li>
+<li>
+<p>Open with a controversial opinion.</p>
+</li>
+<li>
+<p>Open with a moment in time.</p>
+</li>
+<li>
+<p>Open with a vulnerable statement.</p>
+</li>
+<li>
+<p>Open with a weird, unique insight.</p>
+</li>
+</ul>
+<p>Because the clearer you are about the reader’s thinking the more likely you are to speak directly to them. AND when people feel like you are speaking directly to them, you hook their attention. And when you hook the reader’s attention using a proven format (that you understand), you go viral!</p>
+<p>When you internalize these 11 things and apply them in your writing, you will be creating your own viral templates in no time!</p>
+<p>Now, let’s use ChatGPT to give you a head start.</p>
+<h1 id="how-to-find-twitter-hooks-that-capture-attention-and-are-worth-reverse-engineering"><strong>How to Find Twitter Hooks That Capture Attention (And Are Worth Reverse Engineering)</strong></h1>
+<p>When it comes to finding a Twitter hook, there are 3 questions you need to ask:</p>
+<ol>
+<li>
+<p>What makes YOU stop scrolling?</p>
+</li>
+<li>
+<p>What get YOU to click to read more?</p>
+</li>
+<li>
+<p>What are other readers already clicking on?</p>
+</li>
+</ol>
+<p><em>That’s it.</em></p>
+<p>Every single post you choose to “templatize” should prove capable of stopping the scroll and generating interest – otherwise, you should ignore it.</p>
+<p>Here are the steps:</p>
+<h1 id="step-1-follow-50-interesting-accounts">Step 1: Follow 50 interesting accounts.</h1>
+<p>Your Twitter feed will be 100X more valuable when you follow interesting people.</p>
+<ul>
+<li>
+<p><strong>Dig into your niche:</strong> Use advanced search for top tweets and people in your niche.</p>
+</li>
+<li>
+<p><strong>Browse your “Who To Follow” list:</strong> Follow accounts that are followed by people you follow.</p>
+</li>
+<li>
+<p><strong>Search for universal topics:</strong> Dive into health, wealth, and relationships and filter by likes.</p>
+</li>
+</ul>
+<p>Here’s a 60 second <a href="https://twitter.com/dickiebush/status/1400615906678542341">crash-course on how to use Twitter advanced search</a>.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!tMsI!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41763336-e0af-4a1f-8a3a-6ad0e22ede1b_1640x992.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!tMsI!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F41763336-e0af-4a1f-8a3a-6ad0e22ede1b_1640x992.png)</p>
+<p>Keep following until you hit 50 people—then stop.</p>
+<p>Next create a Twitter list with all the people you followed. Then when you are ready to go “template hunting” you can skip the ads and other things you don’t care about to go straight to the people you want to study. You can read about <a href="https://twitter.com/dickiebush/status/1587802929548988416">how to set up a Twitter list that works for your here</a>.</p>
+<p>Scroll your Twitter list until you find something that captures your attention. And when it does, grab the link and drop it into a Notion doc or bookmark it right inside of Twitter.</p>
+<p>That’s it!</p>
+<p>Make it a part of your daily / weekly routine to scan this list for scroll-stopping posts.</p>
+<h1 id="step-2-find-the-highest-performing-content-for-big-name-creators-in-and-out-of-our-niche">Step 2: Find the highest-performing content for big-name creators in (and out) of our niche.</h1>
+<p>Big accounts on Twitter are ripe for studying—there’s a reason they are big and you are going to take advantage of that.</p>
+<ul>
+<li>
+<p><strong>Browse the <a href="https://readwise.io/twitter_leaderboard?threads">Twitter Leaderboard:</a></strong> Go down the list and find accounts that resonate with you.</p>
+</li>
+<li>
+<p><strong>Use <a href="https://tweethunter.io/twemex">Twemex</a> to find high performing content for each account:</strong> Twemex automatically surfaces the most interesting ideas for any user account, which means it’s proven!</p>
+</li>
+<li>
+<p><strong>Add proven tweets to your bookmarks:</strong> Again grab the link to each proven tweet and drop it into a Notion or doc or bookmark it right inside of Twitter.</p>
+</li>
+</ul>
+<p>Now you have a collection of tweets waiting to be transformed into templates.</p>
+<p>Time to call in the intern!</p>
+<h1 id="step-3-train-chatgpt-to-templatize-scroll-stopping-hooks">Step 3: Train ChatGPT to “templatize” scroll-stopping hooks.</h1>
+<p>Here’s what we are going to ask our Digital Intern to do for us today:</p>
+<ol>
+<li>
+<p>Analyze a proven hook that you bookmarked in Steps 1 and 2 above.</p>
+</li>
+<li>
+<p>Explain the psychologic principles working in the hook, so you understand why it works.</p>
+</li>
+<li>
+<p>Create a reusable template that you can turn around and use for your own topic.</p>
+</li>
+<li>
+<p>And finally, we are going to ask ChatGPT for a simple suggestion on how to apply the hook.</p>
+</li>
+</ol>
+<p>We will use Dickie's most popular tweet from Step 2, which has gained over 5 million views, as an example.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!yOAF!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d25980a-4e27-4f9b-87bc-55947c64b18f_808x1244.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!yOAF!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F6d25980a-4e27-4f9b-87bc-55947c64b18f_808x1244.png)</p>
+<p>Let’s go!</p>
+<h1 id="copypaste-the-prompt-into-a-new-window-in-chatgpt"><strong>Copy/paste the prompt into a new window in ChatGPT.</strong></h1>
+<ul>
+<li>
+<p>Grab the text from a tweet in your newly created proven “hook library.”</p>
+</li>
+<li>
+<p>Run the below ChatGPT prompt. (<strong>This prompt works best with GPT-4.</strong>)</p>
+</li>
+<li>
+<p>Once ChatGPT is ready, give it your tweet text and hit send!</p>
+</li>
+</ul>
+<pre><code>I am going to train you to analyze viral writing and turn your analysis into a template.
+
+We are going to do 3 things.
+1. Analyze the text
+2. Create the template
+3. Suggest a practical application
+
+1. Analyze the text: In 35 words or less, explain the primary hook, persuasion technique, or motivation used to influence readers—explain why it works (what's in it for the reader?)
+
+2. Create the template: I want you to create a template for the text I provide (mad-lib style) so it's easy to plug my own topic into it.
+- A template is a text format that serves as a starting point and guide for a new text. 
+- A template includes placeholders for content separated by “{}” so that a writer can turn it into their own text by filling in the variable for each placeholder.
+- A template, when filled in, should feel like a brand new text.
+- You MUST use &quot;goal-oriented variables&quot; because they describe the intended outcome of an action and are helpful to someone trying to input the variables because they provide a clear indication of what information should be entered in that field. For example, if a user sees the variable &quot;{Desired Outcome}&quot;, they know that they should enter the desired outcome of a particular task or project in that field.
+- Avoid &quot;generic variables&quot; like &quot;{Noun}&quot; and &quot;{Verb}&quot; because they are too general. If a user sees the variable &quot;{Noun}&quot;, they won’t know what specific type of noun should be entered in that field, such as a person's name, a product name, or a specific object.
+- You MUST preserve the formatting and structure of the original text.
+
+3. Practical Application: In 1 sentence, share 1 idea to help me apply the template in my business / how should I think about using it. Write in the 2nd person.
+
+Here's an EXPLANATION, TEXT, TEMPLATE, and APPLICATION so you understand what we are doing:
+--
+EXAMPLE TEXT
+--
+The KING of YouTube:
+
+Mr. Beast.
+
+Over the last 12 months, he's gained over 50,000,000 subscribers.
+
+So I binge watched 100 hours of his videos to study how he's done it so quickly.
+
+And here's his 3-part framework for rapid growth (that you can use on any platform):
+
+--
+EXAMPLE EXPLANATION
+--
+The primary hook in this text is the promise of learning the secrets behind Mr. Beast's rapid growth on YouTube. The persuasion technique used is the appeal to curiosity and the desire for success, as the text suggests that by following his framework, readers can achieve rapid growth on any platform. It works because it taps into the reader's aspiration to achieve similar success and offers a solution through the framework.
+
+--
+EXAMPLE TEMPLATE:
+--
+The {Credible Statement} of {Topic} 
+
+{Person}
+
+Over the last {Time Period}, {Massive Accomplishment}.
+
+So {What you did} to study {How Accomplishment Was Acheived}.
+
+And here's {Number} part framework for {Desired Outcome}:
+
+--
+EXAMPLE APPLICATION:
+--
+Analyze a successful digital business related in your niche and breakdown their strategy into simple steps.
+--
+
+Output: ONLY give me the Explanation, Template, and Application.
+
+Formating: Create sub-headings for the Explanation, the Template, and Application using markdown to make it easy to read the output.
+
+Remember: Use &quot;Goal Oriented Variables&quot; for the Template and preserve the formatting and structure of the original text.
+
+Are you ready for the text I want you to create a template for?
+</code></pre>
+<h1 id="check-out-the-results">Check out the results!</h1>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!i5O0!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F842cef4c-8672-45e1-a7e8-b7e423a5b9fc_1064x1234.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!i5O0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F842cef4c-8672-45e1-a7e8-b7e423a5b9fc_1064x1234.png)</p>
+<blockquote>
+<p><strong>Note:</strong> We are asking ChatGPT to utilize its knowledge of psychological triggers to engage in some quick and thoughtful analysis for you. As the orchestrator, you still need to judge the output.</p>
+</blockquote>
+<p>Read the explanation. Review the template. Think about the hook critically on your own. What made you save it in the first place! And then consider the application. With repeated practice, you'll start recognizing patterns in the hooks, enhancing your proficiency in writing them.</p>
+<p>Let’s keep going and put our intern to the test!</p>
+<h1 id="step-4-brainstorm-3-new-hooks-using-your-niche-topic">Step 4: Brainstorm 3 new hooks using your niche topic.</h1>
+<p>In this last step, we are going to use the template you just created to write a similar hook for a new topic!</p>
+<p>Use the suggested application from Step 3 to inform your topic in this step. For example, if the application suggestion you received was “share a personal story about overcoming challenges with a product,” give ChatGPT a product and insight on a product challenge you’ve had: your frustration with using Twitter, why you think LInkedIn is terrible, etc.</p>
+<p><strong>Here’s the prompt:</strong></p>
+<pre><code>Great! Now, for the template you just created, I need your help filling in all the variables using a new topic.
+
+1. I will provide a new topic.
+2. You will replace each variable in the template based on your knowledge of the new topic and return the completed template, preserving the format and structure of the template.
+
+Do you understand?
+</code></pre>
+<h1 id="boom">Boom!</h1>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!5N0i!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa69b9d98-6f9a-495d-ab7b-49bc81b5b674_976x550.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!5N0i!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa69b9d98-6f9a-495d-ab7b-49bc81b5b674_976x550.png)</p>
+<p><strong>You now have a template analyzer, creator, and executor all in your hands!</strong></p>
+<p>But remember, ChatGPT is doing 80% of the work here for you. It is still up to you use your best judgement to tweak and refine the output.</p>
+<p>Go have fun with it!</p>
+<p>Chat soon,</p>
+<p><em><a href="https://twitter.com/Nicolascole77">Nicolas Cole</a></em></p>
+<p><em><a href="https://twitter.com/dickiebush">Dickie Bush</a></em></p>
+<p><em>Co-Creators of <a href="https://www.ship30for30.com/">Ship 30 for 30</a>.</em></p>
+<hr />
+<p><em>PS… If you’re enjoying Write With AI, will you take 6 seconds and forward this edition to a friend? It goes a long way in helping us grow the newsletter (and bring more and more Digital Writers into the world).</em></p>
+<p><a href="https://writewithai.substack.com/?utm_source=substack&amp;utm_medium=email&amp;utm_content=share&amp;action=share">Share Write With AI</a></p>
+<p><em>And if you want to be an <strong>even better</strong> <strong>friend</strong>, you can give the gift of Write With AI by clicking the button below. Please let us know if you choose this option so we can send over a bonus as a thank you.</em></p>
+<p><a href="https://writewithai.substack.com/subscribe?&amp;gift=true">Give a gift subscription</a></p>
+<p><em>And finally, we’d love your input on how we could make Write With AI even more useful for you! So please leave a comment with:</em></p>
+<ul>
+<li>
+<p>Ideas you’d like covered in future editions</p>
+</li>
+<li>
+<p>Your biggest takeaway from this edition</p>
+</li>
+</ul>
+<p><em>We read &amp; reply to every single one of them!</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

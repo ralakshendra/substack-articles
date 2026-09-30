@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>How I Turned 10 Years Of Headline Writing Experience Into A Claude Skill In 30 Minutes - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-i-turned-10-years-of-headline-writing-experience-into-a-claude-skill-in-30-minutes" class="nav-link">How I Turned 10 Years Of Headline Writing Experience Into A Claude Skill In 30 Minutes</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-i-built-a-claude-headline-writing-skill-in-30-minutes-without-writing-a-single-line-of-code" class="nav-link">How I Built A Claude Headline Writing Skill In 30 Minutes (Without Writing A Single Line Of Code)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-skills-are-different-from-projects" class="nav-link">How Skills Are Different From Projects</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="how-i-turned-10-years-of-headline-writing-experience-into-a-claude-skill-in-30-minutes">How I Turned 10 Years Of Headline Writing Experience Into A Claude Skill In 30 Minutes</h1>
+<p><em>(Plus Download My File So You Can Generate Titles On Demand)</em></p>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2026-01-07</p>
+<hr />
+<p>Over the last 10 years, I’ve written thousands of headlines.</p>
+<p>And I’ve refined my process into a 5-part framework that consistently produces irresistible titles:</p>
+<ol>
+<li>
+<p>The Number</p>
+</li>
+<li>
+<p>The What</p>
+</li>
+<li>
+<p>The Who</p>
+</li>
+<li>
+<p>The Why</p>
+</li>
+<li>
+<p>Twisting The Knife</p>
+</li>
+</ol>
+<p>These five pieces answer the questions every reader asks before they click: How long will this take? What am I getting? Is this for me? Why should I care? And most importantly—what happens if I do (or don’t) read this?</p>
+<p>Whether you’re writing a Medium article, a blog post on your website, a subhead on a product landing page, or even the subject line of an email this framework is the secret to writing headlines that capture and keep your target reader’s attention.</p>
+<p>And today, I’m going to show you how I trained Claude to use this framework in 5 easy steps—so you can write the perfect headline in seconds (and build your own skills with Claude).</p>
+<h1 id="how-i-built-a-claude-headline-writing-skill-in-30-minutes-without-writing-a-single-line-of-code">How I Built A Claude Headline Writing Skill In 30 Minutes (Without Writing A Single Line Of Code)</h1>
+<p>Last October, Anthropic released Claude Skills.</p>
+<p>A Claude Skill is a way to save instructions once, so you don’t have to restate them every time you start a new chat.</p>
+<p>Skills are perfect for:</p>
+<ul>
+<li>
+<p>Writing rules</p>
+</li>
+<li>
+<p>Go-to frameworks</p>
+</li>
+<li>
+<p>Context, voice, and style</p>
+</li>
+</ul>
+<p>If you’re pasting the same prompts over and over a Skill removes that setup step entirely.</p>
+<p>Let’s break it down.</p>
+<h3 id="step-1-start-a-skills-chat-with-claude">Step 1: Start A Skills Chat With Claude</h3>
+<p>All you need is a simple prompt to get started.</p>
+<p>For example: “I want to build a headline writing skill.”</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!gxRp!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbdf85370-af17-439b-8b52-d46c9923c249_1496x1400.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!gxRp!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fbdf85370-af17-439b-8b52-d46c9923c249_1496x1400.png)</p>
+<h3 id="step-2-answer-claudes-skill-discovery-questions">Step 2: Answer Claude’s Skill Discovery Questions</h3>
+<p>Once you initiate the Skill building process, Claude helps you define the Skill by asking you a series of clarifying questions.</p>
+<p>Together, you’ll figure out what resources your Skill needs.</p>
+<p>Skills can include:</p>
+<ul>
+<li>
+<p>Code</p>
+</li>
+<li>
+<p>Examples</p>
+</li>
+<li>
+<p>Templates</p>
+</li>
+<li>
+<p>Style guides</p>
+</li>
+<li>
+<p>Company info</p>
+</li>
+<li>
+<p>Etc.</p>
+</li>
+</ul>
+<p>Answer each question as if you were explaining the Skill to an intern.</p>
+<p>For example:</p>
+<pre><code>Here’s a framework for writing an irresistible headline:
+
+There are 5 pieces of an irresistible headline are:
+- HOW MANY (Number)
+- THE WHAT (Topic)
+- THE WHO (Audience)
+- THE WHY (Outcome)
+- TWIST THE KNIFE (More Outcomes)
+
+In most cases, this is the order in which the pieces should be assembled in a headline.
+
+For example:
+7 Copywriting Tips For Beginners To Sell Your First $100 Digital Product, Start Making Money Online, And Eventually Quit Your Job And Become A Full-Time Internet Entrepreneur
+- 7 Tips= HOW MANY
+- Copywriting = THE WHAT
+- For Beginners = THE WHO
+- To Sell Your First $100 Digital Product = THE WHY
+- Start Making Money Online, And Eventually Quit Your Job And Become A Full-Time Internet Entrepreneur = TWIST THE KNIFE
+
+Now, let me give you examples of different variations you can choose from when writing irresistible headlines with these 6 different pieces.
+
+- HOW MANY (Number): This is always a number, usually between 2 and 19. For example: 7 Copywriting Tips, 2 Productivity Mistakes, 11 Self-Help Habits, etc.
+- THE WHAT (Topic): This is always the topic. Examples of topics (but not limited to just these), Copywriting, Productivity, Self-Help, Fitness, Mindfulness, Knitting, Racketball, Meditation, etc.
+- THE WHO (Audience): This is the niche-specific audience. For example (but not limited to just these): Beginners, Stay-At-Home Moms, College Students, Chicagoans, etc. This audience can be a noun and/or a noun modified by a geography or demographic.
+- THE WHY (Outcome): This is the thing the target reader wants, based on the proven approach. For example (but not limited to just these): if the topic is “productivity” and the proven approach is “Tips” and the audience is “college students” then the outcome is something college students want productivity tips to unlock in their life (like “to get straight A’s in class” or “to graduate with honors and land a high-paying job straight out of college”).
+- TWIST THE KNIFE (More Outcomes): This is just 1-3 more outcomes. If the WHY outcome is negative (like “to make sure they don’t fail their final exam”), then list 1-3 more negative outcomes (”and have to work at a gas station or move back-in with their parents), and if the WHY outcome is positive (”to get straight A’s in class”, then list 1-3 more positive outcomes (”start with a six-figure salary right out of school, and buy a sports car before the age of 23”).
+
+One last rule to increase the effectiveness of an irresistible headline.
+
+Whenever you’re writing the WHY (outcome) or TWIST THE KNIFE (more outcomes), you always want to write the “tangible” version opposed to the “intangible” version. 
+For example, an Intangible WHY (outcome) would be: “So you can be happier.” But “happier” is very intangible, and not very specific.
+Instead, a Tangible WHY (outcome) would be: “So you can wake up every morning feeling full of energy.” Everyone can imagine themselves “waking up early” in the morning, and that’s a very Tangible, Measurable outcome. That’s the goal. Always Tangible language instead of Intangible language.
+Tangible language can be defined as something a reader could viscerally touch or feel—opposed to an ambiguous, vague “thought” or “general idea.”
+
+So that’s the framework for writing irresistible headlines.
+</code></pre>
+<h3 id="step-3-sit-back-and-watch-claude-create-your-skill">Step 3: Sit Back And Watch Claude Create Your Skill</h3>
+<p>After you’ve outlined what your Skill should do, Claude runs a script that creates the Skill for you automatically.</p>
+<p>Claude bundles it all into a single .skill file.</p>
+<p>Click here to grab my headline-writer skill file so you can use it in your own Claude account.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!Iec2!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F60f8c7f2-cb71-4ea2-975a-a6b33d6aba3c_1126x1044.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!Iec2!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F60f8c7f2-cb71-4ea2-975a-a6b33d6aba3c_1126x1044.png)</p>
+<h3 id="step-4-upload-your-skill-file-as-a-new-claude-capability">Step 4: Upload Your Skill File As A New Claude Capability</h3>
+<p>Here’s how to do it.</p>
+<ol>
+<li>
+<p>Download your .skill file from Claude to your computer.</p>
+</li>
+<li>
+<p>Go to Claude Profile → Settings → Capabilities. Scroll to the “Skills” section.</p>
+</li>
+<li>
+<p>Upload the skill file.</p>
+</li>
+</ol>
+<p>That’s it.</p>
+<p>Once it’s uploaded, you don’t have to do anything special.</p>
+<p>You can now use your skill in any chat.</p>
+<p>This means:</p>
+<ul>
+<li>
+<p>Skills work in regular chats.</p>
+</li>
+<li>
+<p>Skills work inside Projects.</p>
+</li>
+<li>
+<p>Skills work in Claude Code.</p>
+</li>
+<li>
+<p>Skills work across devices (desktop, web, mobile).</p>
+</li>
+</ul>
+<p>You create one skill, and it’s available everywhere inside your account.</p>
+<p>Note: No one else can see or use them unless you share the .skill file directly.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!nLKP!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F164791e5-807d-486a-b9ab-8675a0b03700_2394x1252.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!nLKP!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F164791e5-807d-486a-b9ab-8675a0b03700_2394x1252.png)</p>
+<h3 id="step-5-start-using-your-new-claude-skill">Step 5: Start Using Your New Claude Skill</h3>
+<p>After you upload the Skill, give it a try with a simple command.</p>
+<p><em>“Hey Claude, I want to write 5 headlines about {Your Topic}.”</em></p>
+<p>Claude will recognize the task, load your Skill, and generate options using your framework. You’ll even see the Skill activate in Claude’s chain of thought as it works—so you know exactly when it’s being used.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!EI9u!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F067c517c-96c9-4717-9846-80922ffc71d7_1486x1912.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!EI9u!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F067c517c-96c9-4717-9846-80922ffc71d7_1486x1912.png)</p>
+<p>Pretty cool, ,right?</p>
+<p>Now, every time I ask Claude for headline ideas, it automatically uses my 5-part framework. I don’t have to re-explain it. I don’t have to paste the formula into every conversation. Claude just knows. It’s like having a junior writer who’s been trained on my exact process—except it never forgets and it’s available 24/7.</p>
+<h1 id="how-skills-are-different-from-projects">How Skills Are Different From Projects</h1>
+<p>If you’re already using <a href="https://writewithai.substack.com/i/166261666/tip-use-claude-projects">Claude Projects</a>, you might be wondering how Skills fit in.</p>
+<p>Here’s the difference:</p>
+<ul>
+<li>
+<p><strong>Projects</strong> store documents and context for specific work. They’re like a filing cabinet—you put files in, and Claude can reference them when you’re working inside that Project.</p>
+</li>
+<li>
+<p><strong>Skills</strong> teach Claude how to perform tasks. They’re like a handbook—step-by-step instructions on your process, your framework, your methodology.</p>
+</li>
+</ul>
+<p>Projects hold your content. Skills hold your process.</p>
+<p>You can use both together. For example, you could have a Project with all your past articles and a Skill that teaches Claude how to write headlines in your style. The Skill applies your framework, and the Project gives Claude context on your previous work.</p>
+<p>That’s it!</p>
+<p>Once you build a Skill, you never have to re-teach Claude your process again. You can turn any template, checklist, or process into a Skill. Which means you stop wasting time repeating yourself and start scaling your skills.</p>
+<p>Here’s what I suggest you do next:</p>
+<h3 id="click-here-to-download-the-headline-writer-skill"><a href="https://vine-perch-730.notion.site/headline-writer-skill-for-claude">Click here to download the Headline Writer Skill</a></h3>
+<p>Upload it to your Claude account and test it out. See how it applies the 5-part framework. Then think about what other frameworks you use regularly that you could turn into Skills.</p>
+<p>Go ahead and get started right now, because the sooner you build your first Skill, the sooner you stop re-explaining the same things in every conversation.</p>
+<p>Chat soon,</p>
+<p>—Dickie &amp; Cole</p>
+<p><em>Co-Founders of <a href="https://www.ship30for30.com/">Ship 30 For 30</a></em></p>
+<p><em>Co-Founders of <a href="https://www.premiumghostwritingacademy.com/">Premium Ghostwriting Academy</a></em></p>
+<p><em>Co-Founders of <a href="https://typeshare.co/">Typeshare</a></em></p>
+<p><em>Co-Founders of <a href="https://writewithai.substack.com/">Write With AI</a></em></p>
+<hr />
+<p><em>PS. If you want even more help writing irresistible headlines with AI so you can:</em></p>
+<ul>
+<li>
+<p><em>Stop readers in their tracks.</em></p>
+</li>
+<li>
+<p><em>Get them to pause, and think, “I need to read this!”</em></p>
+</li>
+<li>
+<p><em>Click. Then give their undivided attention.</em></p>
+</li>
+</ul>
+<p><em><strong><a href="https://writewithai.substack.com/p/headlines-and-hooks-masterclass-with">Click here for a 90-minute Headlines &amp; Hooks Masterclass With ChatGPT.</a></strong></em></p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!Z4gh!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2b44b66f-f8d5-4349-a7a4-dc3a59c4541f_1280x720.jpeg" /></p>
+<p>](https://writewithai.substack.com/p/headlines-and-hooks-masterclass-with)</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

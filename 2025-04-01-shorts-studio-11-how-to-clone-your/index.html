@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>[Shorts Studio] #11 How To Clone Your Voice With ElevenLabs - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#shorts-studio-11-how-to-clone-your-voice-with-elevenlabs" class="nav-link">[Shorts Studio] #11 How To Clone Your Voice With ElevenLabs</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#what-is-elevenlabs" class="nav-link">What Is ElevenLabs?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#why-use-a-voiceover" class="nav-link">Why Use A Voiceover?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#who-is-elevenlabs-best-for" class="nav-link">Who Is ElevenLabs Best For?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-ways-to-create-voiceovers-with-elevenlabs" class="nav-link">3 Ways To Create Voiceovers With ElevenLabs</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#what-makes-an-ai-voiceover-sound-good" class="nav-link">What Makes An AI Voiceover Sound Good?</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="shorts-studio-11-how-to-clone-your-voice-with-elevenlabs">[Shorts Studio] #11 How To Clone Your Voice With ElevenLabs</h1>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2025-04-01</p>
+<hr />
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!j0E5!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cd1e828-a2fd-4238-a942-68d4f16c5497_1260x900.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!j0E5!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0cd1e828-a2fd-4238-a942-68d4f16c5497_1260x900.png)</p>
+<p>If you’re creating faceless Shorts, or just want to save time recording your own voice, then voiceover becomes the backbone of your content.</p>
+<p>And ElevenLabs is the most natural-sounding AI voice tool available right now.</p>
+<p>In this lesson, you’ll learn:</p>
+<ul>
+<li>
+<p>How to generate voiceovers using 3 different methods</p>
+</li>
+<li>
+<p>What makes an AI voiceover actually sound good</p>
+</li>
+<li>
+<p>And how to use it in your Shorts workflow</p>
+</li>
+</ul>
+<p>Let’s start with the basics.</p>
+<h2 id="what-is-elevenlabs">What Is ElevenLabs?</h2>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!-W5t!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ac10804-36c0-4c09-a189-9aa584a37159_2948x1536.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!-W5t!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7ac10804-36c0-4c09-a189-9aa584a37159_2948x1536.png)</p>
+<p>ElevenLabs is an AI tool that turns written text into human-like voiceovers.</p>
+<p>You give it a script. It reads it aloud.</p>
+<p>But unlike most text-to-speech tools, it doesn’t sound robotic. It can sound relaxed, excited, thoughtful—even sarcastic. The difference is in the tone, pacing, and emotion.</p>
+<p>And when used well, the output feels like a real human.</p>
+<h2 id="why-use-a-voiceover">Why Use A Voiceover?</h2>
+<p>A good voiceover can:</p>
+<ul>
+<li>
+<p>Make your short feel more premium</p>
+</li>
+<li>
+<p>Deliver tone (which text on screen alone can’t do)</p>
+</li>
+<li>
+<p>Free you from needing to be on mic or camera</p>
+</li>
+</ul>
+<p>And you don’t have to hire a voice actor, rent a mic, or spend hours editing audio.</p>
+<p>But ultimately a good “voice” keeps your viewer engaged.</p>
+<p><a href="https://www.tiktok.com/@askvinh/video/7405003675422199056"><img alt="" src="https://substackcdn.com/image/fetch/$s_!cb3c!,w_640,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F65449f25-afbf-403f-8e9b-b96197e23cf7_1080x1920.jpeg" /></a></p>
+<p><a href="https://www.tiktok.com/@askvinh">@askvinh</a><a href="https://www.tiktok.com/@askvinh/video/7405003675422199056">If you lose people when you talk, it's because you're not engaging enough. The 3 areas you need to think about to be engaging are: 1. Auditory engagement - how you sound 2. Visual engagement - how you use body language and hand gestures 3. Content - is what you're saying interesting to the person? Practice improving these 3 areas if you want to keep people engaged when you speak. It's that simple! Do YOU struggle with keeping people engaged?</a></p>
+<p><img alt="" src="https://substackcdn.com//img/alert-circle.svg" />Tiktok failed to load.  </p>
+<p>Enable 3rd party cookies or use another browser</p>
+<h2 id="who-is-elevenlabs-best-for">Who Is ElevenLabs Best For?</h2>
+<p>You’ll get the most value out of ElevenLabs if:</p>
+<ul>
+<li>
+<p>You’re making faceless content</p>
+</li>
+<li>
+<p>You want to sound more polished without recording yourself</p>
+</li>
+<li>
+<p>You want to create a “voice” for your channel that’s consistent across videos</p>
+</li>
+<li>
+<p>You want to create videos in different languages</p>
+</li>
+<li>
+<p>You want to move faster without sacrificing quality</p>
+</li>
+</ul>
+<p>If you're already writing scripts, ElevenLabs makes it easy to scale.</p>
+<h2 id="3-ways-to-create-voiceovers-with-elevenlabs">3 Ways To Create Voiceovers With ElevenLabs</h2>
+<p>There are three ways to generate a voiceover using ElevenLabs.</p>
+<h3 id="way-1-use-a-voice-from-the-library">Way #1: Use A Voice From The Library</h3>
+<p>This is the fastest path.</p>
+<p>ElevenLabs has a Voice Library with thousands of community-made voices. Many are clones or custom creations, and you can preview before using.</p>
+<p>Some of the most popular, default voices include:</p>
+<ul>
+<li>
+<p><strong>Rachelle</strong>—neutral American female, often used for explainer content</p>
+</li>
+<li>
+<p><strong>Mark</strong>—male voice, good for conversational writing</p>
+</li>
+<li>
+<p><strong>Dakota H</strong>—female, clean, natural</p>
+</li>
+</ul>
+<p>There are hundreds of voices to choose from.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!dd2b!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ca50392-130f-4f8b-a268-99df73cf9ed6_2540x1550.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!dd2b!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2ca50392-130f-4f8b-a268-99df73cf9ed6_2540x1550.png)</p>
+<p>I recommend spending 15 minutes <a href="https://elevenlabs.io/app/voice-library">browsing the voice library</a>. Filter on your preferences. Pick one that fits the tone of your video or just a voice that sounds good to you.</p>
+<p>You can always switch voices later.</p>
+<p><strong>Pro tip:</strong> search using a sample of your voice to match your style and tone.</p>
+<h3 id="way-2-design-your-voice-with-an-ai-prompt">Way #2: Design Your Voice With An AI Prompt</h3>
+<p>If you want something specific, you can use the Voice Design tool.</p>
+<p>You describe the voice in plain language, and ElevenLabs generates a few options.</p>
+<p>Example prompt:</p>
+<blockquote>
+<p><em>“Young American female. Casual tone. Slightly upbeat and friendly, but not over-the-top.”</em></p>
+</blockquote>
+<p>You can also specify accent, age, emotion, speed, pitch, and more.</p>
+<p>Preview a sample, tweak if needed, and save the one you like.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!lMWX!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fecb88931-c81b-421f-ad41-feb59be1a5c9_1482x1130.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!lMWX!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fecb88931-c81b-421f-ad41-feb59be1a5c9_1482x1130.png)</p>
+<h3 id="way-3-clone-your-own-voice">Way #3: Clone Your Own Voice</h3>
+<p>This is useful if you want your Shorts to sound like <em>you</em>—but you don’t want to record every time.</p>
+<p>Here’s how it works:</p>
+<ol>
+<li>
+<p>Upload a 1–5 minute sample of your voice (must be clean and clear)</p>
+</li>
+<li>
+<p>ElevenLabs trains a model that mimics your tone, cadence, and speech patterns</p>
+</li>
+<li>
+<p>You can now generate scripts in your own voice</p>
+</li>
+</ol>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!OVyu!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e0ed97b-314d-4b2a-9e6c-080aed575fb4_2036x1186.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!OVyu!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7e0ed97b-314d-4b2a-9e6c-080aed575fb4_2036x1186.png)</p>
+<p>Cloning works best when your sample includes natural speech. Try to record yourself speaking normally.</p>
+<h3 id="how-to-use-your-voice-with-elevenlabs-text-to-speech-tool">How To Use Your Voice With ElevenLabs (Text to Speech Tool)</h3>
+<p>Once you’ve written your script and picked your voice, generating the audio is simple.</p>
+<p>Here’s how to do it step by step:</p>
+<ol>
+<li>
+<p><strong>Go to the “Text to Speech” tab</strong> This is where you generate your audio from a written script.</p>
+</li>
+<li>
+<p><strong>Paste your script into the editor</strong> Make sure your text includes punctuation, line breaks, or any emphasis markers you want the voice to pick up on. (See the next section for a few tips.)</p>
+</li>
+<li>
+<p><strong>Choose your voice</strong> Select from your custom voice, cloned voice, or one of the voices from the ElevenLabs library. You can preview each voice before generating.</p>
+</li>
+<li>
+<p><strong>Click “Generate”</strong> ElevenLabs will read your script and produce a voiceover. This usually takes just a few seconds.</p>
+</li>
+<li>
+<p><strong>Listen—and tweak</strong> If something sounds off, edit the script and try again.</p>
+</li>
+</ol>
+<p>That’s it.</p>
+<p>You’ll probably do a few rounds of tweaking before it sounds just right.</p>
+<p>But once you're happy with it, download the audio file from ElevenLabs and drop it into your video editor (CapCut, Descript, Hedra, Final Cut, etc.)</p>
+<p>Done. That’s your voiceover.</p>
+<h2 id="what-makes-an-ai-voiceover-sound-good">What Makes An AI Voiceover Sound Good?</h2>
+<p>Here’s where most creators mess up.</p>
+<p>They think the tool does all the work. So, they write a clean, polished script and expect the AI to deliver it with the timing, tone, and personality of a real person. But that’s not how it works.</p>
+<p>A great voiceover is <strong>50% the voice…and 50% the script.</strong></p>
+<p>If you want your video to sound like a polished audiobook, fine—ElevenLabs can do that straight out of the box. But if you want it to sound like a real person, you need to intentionally add a little friction..Real people pause. Emphasize the wrong word. Trail off mid-thought. Say the same thing twice, use short sentences, interrupt themselves, and speak with emotion.</p>
+<p>There are a few techniques that help:</p>
+<ul>
+<li>
+<p>Writing how you speak</p>
+</li>
+<li>
+<p>Using punctuation to create rhythm and breaks</p>
+</li>
+<li>
+<p>Guiding tone through context or dialogue-style cues</p>
+</li>
+<li>
+<p>Playing with ALL CAPS to emphasize key moments</p>
+</li>
+<li>
+<p>Using AI to “unpolish” your script</p>
+</li>
+</ul>
+<p>We’ll cover each one in a second.</p>
+<p>Or, if you want to skip ahead for the prompts:</p>
+<p><strong><a href="https://vine-perch-730.notion.site/Shorts-Studio-Voice-Scripting-1c801b956bb6801eaa7bcb33dd5c7729">Click here to rewrite your script and add “human flaws” using AI</a></strong>.</p>
+<p>This will automatically rewrite your text with natural pauses, filler phrases, and softer transitions—so it reads more like speech than writing.</p>
+<p>Let’s take a look at a few of the most important rules that make your AI narration feel more natural:</p>
+<h3 id="1-write-how-you-speak">1. Write How You Speak</h3>
+<p>When you use overly formal, academic, or “marketing” language, the voice follows your lead—and the output will sound stiff and over-rehearsed.</p>
+<p>Instead, you want to write like you’re explaining something to a friend.</p>
+<p>Let’s look at a quick comparison.</p>
+<p><strong>Bad:</strong></p>
+<blockquote>
+<p><em>“The following tutorial will explain three key components of optimizing your workflow.”</em></p>
+</blockquote>
+<p>It’s abstract, uses filler phrases like “the following tutorial,” and “it has no real personality or rhythm. It <em>sounds</em> like a white paper.</p>
+<p><strong>Better:</strong></p>
+<blockquote>
+<p><em>“If you want to get more done in 1 hour than most people do in 7 days, you absolutely must avoid these 3 time-wasting tasks. ”</em></p>
+</blockquote>
+<p>Notice how this line gets straight to the point and uses plain everyday language. It feels like someone is about to help you, not lecture you.</p>
+<p>To avoid this problem, say your script out loud before generating the voiceover.</p>
+<p>If it sounds awkward when <em>you</em> say it, it’ll sound even worse coming from an AI.</p>
+<h3 id="2-use-punctuation-to-create-rhythm">2. Use Punctuation To Create Rhythm</h3>
+<p>Commas, ellipses, and line breaks signal natural pauses.</p>
+<p>They help the AI know when to pause, when to emphasize, and when to slow down. So when you want a pause, a shift in tone, or emphasis—you have to build it into the writing.</p>
+<h4 id="use-commas-to-create-short-natural-pauses"><strong>Use commas to create short, natural pauses.</strong></h4>
+<p>When you speak out loud, you naturally pause between ideas or clauses. Commas tell the AI to do the same.</p>
+<p>Without the comma:</p>
+<blockquote>
+<p>“Let’s talk about how you fix this mistake before it slows you down.”</p>
+</blockquote>
+<p>Reads fast, all in one breath.</p>
+<p>With the comma:</p>
+<blockquote>
+<p>“Let’s talk about how you fix this mistake, before it slows you down.”</p>
+</blockquote>
+<p>This adds a beat and gives the sentence room to breathe, which sounds more like a person.</p>
+<h4 id="use-ellipses-to-add-hesitation"><strong>Use ellipses to add hesitation.</strong></h4>
+<p>Ellipses are great when you want to signal a moment of thought, or lead-in to a reveal.</p>
+<p>Example:</p>
+<blockquote>
+<p>“You think the problem is your niche…but it’s not.”</p>
+</blockquote>
+<p>That pause is doing a lot of work.</p>
+<p>Without it, the same line doesn’t carry as much weight:</p>
+<blockquote>
+<p>“You think the problem is your niche but it’s not.”</p>
+</blockquote>
+<p>Use ellipses when you want the voice to <em>linger</em>—to make the listener lean in.</p>
+<h4 id="use-line-breaks-to-control-pacing"><strong>Use line breaks to control pacing.</strong></h4>
+<p>Short-form video scripts are more punchy when you write one line per beat.</p>
+<p>Example:</p>
+<pre><code>Most people don’t realize this:
+
+Your first draft is never the problem.
+</code></pre>
+<p>This gives you:</p>
+<ul>
+<li>
+<p>A clean pacing cue for editing</p>
+</li>
+<li>
+<p>Built-in emphasis without needing caps or exclamation marks</p>
+</li>
+<li>
+<p>A way to match text-on-screen with voiceover moments</p>
+</li>
+</ul>
+<p>If your script looks like a paragraph, it’ll <em>sound</em> like one breathless, monotone paragraph.</p>
+<p>Your editorial rhythm improves when your writing has structure.</p>
+<p>Break it into beats.</p>
+<h4 id="break-time10s"><code>&lt;break time="1.0s"/&gt;</code></h4>
+<p>ElevenLabs also supports SSML tags like this one.</p>
+<p>If you want to insert an exact pause, you can write:</p>
+<pre><code>Here’s the biggest mistake I see…  
+&lt;break time=&quot;1.2s&quot;/&gt;  
+Trying to say too much in 60 seconds.
+</code></pre>
+<p>This tells the AI: stop here for X seconds, then continue.</p>
+<p>The more intentional your punctuation and formatting, the more human the voice sounds.</p>
+<h3 id="3-insert-emotional-emphasis">3. Insert Emotional Emphasis</h3>
+<p>If your script sounds flat, your voiceover will too.</p>
+<p>To fix this, you need to build emotion and emphasis into the script itself.</p>
+<p>Here’s how:</p>
+<h4 id="use-narrative-cues-to-guide-tone">Use narrative cues to guide tone</h4>
+<p>AI responds best when emotion is made explicit.</p>
+<p>You can do this in two ways:</p>
+<ol>
+<li>
+<p>Convey emotion through the writing itself</p>
+</li>
+<li>
+<p>Use dialogue-style tags to instruct the model</p>
+</li>
+</ol>
+<p>Let’s look at both.</p>
+<p><strong>Example 1 – Emotion baked into the line:</strong></p>
+<blockquote>
+<p><em>“You spent all that time working… and this is what you walked away with?”</em></p>
+</blockquote>
+<p>The rising tension is built into the sentence. The pacing, punctuation, and progression give the voice enough to read it with disbelief—even without being told explicitly.</p>
+<p><strong>Example 2 – Emotion delivered through a tag:</strong></p>
+<blockquote>
+<p>_“You’re leaving?” she asked, her voice trembling with sadness.  </p>
+<p>“That’s it!” he exclaimed triumphantly._</p>
+</blockquote>
+<p>Tags make the emotional delivery more predictable.</p>
+<p>But the AI <em>will</em> speak the tags unless you remove them from the final audio.</p>
+<p>Here’s what you can do:</p>
+<ul>
+<li>
+<p>Include the emotional tag in the script</p>
+</li>
+<li>
+<p>Generate the audio with the tag</p>
+</li>
+<li>
+<p>Trim that part in post-production (using CapCut, Descript, etc.)</p>
+</li>
+</ul>
+<p>This gives you expressive delivery without having the AI read the tag out loud.</p>
+<h4 id="fine-tune-tone-with-elevenlabs-settings">Fine-tune tone with ElevenLabs settings</h4>
+<p>In addition to writing for emphasis, you can also adjust how much <em>range</em> the voice is allowed to have.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!3-Ph!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ca525d7-9a08-4e7c-9952-df08dd7ac580_1092x1350.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!3-Ph!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ca525d7-9a08-4e7c-9952-df08dd7ac580_1092x1350.png)</p>
+<p>Here’s how the two main sliders work:</p>
+<ul>
+<li>
+<p><strong>Stability</strong></p>
+<ul>
+<li>
+<p>Higher = flatter, more controlled tone</p>
+</li>
+<li>
+<p>Lower = more expressive variation (pitch changes, natural pauses)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Similarity</strong></p>
+<ul>
+<li>
+<p>Higher = stays truer to the original voice profile</p>
+</li>
+<li>
+<p>Lower = allows more deviation and personality</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>If your voiceover feels too robotic:</strong></p>
+<p>Lower the <em>stability</em> to around 30–50%. You’ll hear more variation in tone and pacing.</p>
+<p><strong>If the voice starts to feel inconsistent or loses clarity:</strong></p>
+<p>Raise the <em>similarity</em> slider. It’ll tighten up the tone and pronunciation.</p>
+<p>There’s no universal best setting. You’ll need to test a few combinations.</p>
+<h4 id="use-all-caps">Use ALL CAPS</h4>
+<p>Finally, one of the most reliable ways to signal emphasis in ElevenLabs is to use ALL CAPS on individual words or short phrases.</p>
+<p>This tells the model to <em>“say this part sharp with force.”</em></p>
+<p>Use ALL CAPS when you want to:</p>
+<ul>
+<li>
+<p>Hit a key word in the sentence</p>
+</li>
+<li>
+<p>Add weight to a punchline or reversal</p>
+</li>
+<li>
+<p>Make the voice land a moment the way a human would</p>
+</li>
+</ul>
+<p><strong>Examples</strong></p>
+<p>Without emphasis:</p>
+<blockquote>
+<p><em>“The biggest mistake I see people make is trying to do too much.”</em></p>
+</blockquote>
+<p>With emphasis:</p>
+<blockquote>
+<p><em>“The BIGGEST mistake I see people make… is trying to do TOO MUCH.”</em></p>
+</blockquote>
+<p>Another one:</p>
+<blockquote>
+<p><em>“You think the problem is your niche… but it’s NOT.”</em></p>
+</blockquote>
+<p>Or:</p>
+<blockquote>
+<p><em>“I told you once. I won’t say it AGAIN.”</em></p>
+</blockquote>
+<p>ALL CAPS helps the AI voice <em>punch</em> the line, without needing any extra direction.</p>
+<p>Be careful you don’t overdo it or the model starts to sound overly intense—like shouting in your email.</p>
+<p>Absolutely. Here’s how that section could flow as <strong>#5</strong> under “What Makes an AI Voiceover Sound Good?”—building naturally on the previous techniques, and reinforcing your core point about realism over perfection:</p>
+<h3 id="5-use-ai-to-unpolish-your-script">5. Use AI to “Unpolish” Your Script</h3>
+<p>Sometimes, the best move is to take a polished script…and deliberately make it messier.</p>
+<p>You can do this manually by:</p>
+<ul>
+<li>
+<p>Adding filler phrases (“you know,” “actually,” “look…”)</p>
+</li>
+<li>
+<p>Breaking up longer sentences</p>
+</li>
+<li>
+<p>Repeating key phrases</p>
+</li>
+<li>
+<p>Starting thoughts mid-sentence or interrupting them</p>
+</li>
+</ul>
+<p>But you can also use AI to help.</p>
+<p>Drop in your clean script into <a href="https://vine-perch-730.notion.site/Shorts-Studio-Voice-Scripting-1c801b956bb6801eaa7bcb33dd5c7729?pvs=74">one of these prompts</a>, and AI will rewrite it to sound more human.</p>
+<p>It’ll add:</p>
+<ul>
+<li>
+<p>Conversational phrasing</p>
+</li>
+<li>
+<p>Natural stumbles</p>
+</li>
+<li>
+<p>Human pacing</p>
+</li>
+</ul>
+<p>Think of it like handing your script to a voice coach who makes it sound more like something a person would actually say on camera.</p>
+<p><a href="https://vine-perch-730.notion.site/Shorts-Studio-Voice-Scripting-1c801b956bb6801eaa7bcb33dd5c7729?pvs=74">Click here for the prompts.</a></p>
+<h3 id="heres-your-assignment">Here’s your assignment:</h3>
+<p>By the end of this lesson, you should:</p>
+<ol>
+<li>
+<p>Write a 60-second script (150–170 words)</p>
+</li>
+<li>
+<p>Pick one of the three voice generation methods</p>
+</li>
+<li>
+<p>Create and download your voiceover</p>
+</li>
+<li>
+<p>Add it into your library of video assets for your Short.</p>
+</li>
+</ol>
+<p>If you’ve never used ElevenLabs before, try at least two different voice styles. It will help you hear the difference between tones and understand which voice fits which type of video.</p>
+<p>See you tomorrow,</p>
+<p>—Dickie &amp; Cole</p>
+<p><em>Co-Founders of <a href="https://www.ship30for30.com/">Ship 30 For 30</a></em></p>
+<p><em>Co-Founders of <a href="https://www.premiumghostwritingacademy.com/">Premium Ghostwriting Academy</a></em></p>
+<p><em>Co-Founders of <a href="https://typeshare.co/">Typeshare</a></em></p>
+<p><em>Co-Founders of <a href="https://writewithai.substack.com/">Write With AI</a></em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Top 5 mistakes writers make building AI agents - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#top-5-mistakes-writers-make-building-ai-agents" class="nav-link">Top 5 mistakes writers make building AI agents</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#building-your-first-ai-content-agent-is-easier-than-learning-excel" class="nav-link">Building your first AI content agent is easier than learning Excel.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mistake-1-automate-all-the-things" class="nav-link">Mistake #1: Automate “All The Things”</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mistake-2-skipping-the-manual-version-first" class="nav-link">Mistake #2: Skipping The Manual Version First</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mistake-3-picking-the-wrong-first-use-case" class="nav-link">Mistake #3: Picking The Wrong First Use Case</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mistake-4-treating-agents-like-code" class="nav-link">Mistake #4: Treating Agents Like Code</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#mistake-5-human-out-of-the-loop" class="nav-link">Mistake #5: Human “Out” Of The Loop</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#thats-it" class="nav-link">That’s it!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="top-5-mistakes-writers-make-building-ai-agents">Top 5 mistakes writers make building AI agents</h1>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2025-12-17</p>
+<hr />
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!8rRJ!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F950ab9bb-3de2-48e2-b77f-36e834abdd23_2000x1428.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!8rRJ!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F950ab9bb-3de2-48e2-b77f-36e834abdd23_2000x1428.png)</p>
+<p>Hey there - Mitch here.</p>
+<p>Welcome to the <strong>N8N Trend Jacking Agent Mini-Course</strong>.</p>
+<p>Over the next few days, I’ll help you build your first AI content agent. Cole already walked you through <a href="https://writewithai.substack.com/p/the-future-of-ai-leverage">why the future of AI is orchestration</a> (not just better prompting). Today, I want to make sure you don’t get stuck before you even get started.</p>
+<p>Specifically, I’m going to show you the 5 biggest mistakes writers make when building their first content agent—and how to avoid every one of them.</p>
+<p>Because here’s what usually happens:</p>
+<ul>
+<li>
+<p>You get excited about AI agents.</p>
+</li>
+<li>
+<p>You watch a few YouTube tutorials.</p>
+</li>
+<li>
+<p>Then you open a tool like n8n or Zapier for the first time.</p>
+</li>
+</ul>
+<p>Twenty minutes later, you’re staring at a screen full of nodes, wondering if you need a computer science degree to move forward.</p>
+<p>So you close the tab and go back to manually prompting ChatGPT.</p>
+<p>I’ve been building AI workflows since 2022 and have worked with 100+ founders on hiring, operations, and growth. The ones who install AI systems into their business consistently see 20–30% increases in client retention and ascension rates, plus better customer relationships—simply because they’re no longer buried in low-value admin work.</p>
+<p>The good news: this isn’t rocket science.</p>
+<h2 id="building-your-first-ai-content-agent-is-easier-than-learning-excel">Building your first AI content agent is easier than learning Excel.</h2>
+<p>You just need:</p>
+<ol>
+<li>
+<p>A clear use case (what do you want your agent to do?)</p>
+</li>
+<li>
+<p>The right tools (most are free or under $50/month)</p>
+</li>
+<li>
+<p>A simple framework (which I’m going to give you in this mini-course)</p>
+</li>
+<li>
+<p>And the ability to follow a few instructions to configure your agent</p>
+</li>
+</ol>
+<p>That’s it.</p>
+<p>But there are a few things you need to be aware of that’ll save you hours of headaches.</p>
+<p>Here are the 5 biggest mistakes to watch out for:</p>
+<h2 id="mistake-1-automate-all-the-things">Mistake #1: Automate “All The Things”</h2>
+<p>Once you realize agents are possible, you’ll want to automate EVERYTHING.</p>
+<ul>
+<li>
+<p><em>“I want to monitor trends in my niche”</em></p>
+</li>
+<li>
+<p><em>“I want to write all my LinkedIn posts”</em></p>
+</li>
+<li>
+<p><em>“I want to create Twitter threads”</em></p>
+</li>
+<li>
+<p><em>“I want to draft my weekly newsletter emails”</em></p>
+</li>
+<li>
+<p><em>“I want to auto-respond to social comments and DMs”</em></p>
+</li>
+<li>
+<p><em>“And I want to schedules everything across 5 platforms”</em></p>
+</li>
+</ul>
+<p>If you can automate one thing, why not automate ten things, right?</p>
+<p>The problem is you end up with a Frankenstein system that’s too complex to debug, too expensive to run, and produces mediocre outputs because you’re trying to do too much at once.</p>
+<p>Instead, you want to start with ONE content workflow. Master it. Then add the next one.</p>
+<p>If you’re learning to cook, you don’t start by trying to prepare a 7-course meal for 12 people. You start with scrambled eggs. Then you move to pasta. Then you try something more complex.</p>
+<p>Same with agents.</p>
+<p>Your first agent should do ONE thing really well:</p>
+<ul>
+<li>
+<p>Monitor trends → Generate LinkedIn posts</p>
+</li>
+<li>
+<p>Scan newsletters → Create Twitter threads</p>
+</li>
+<li>
+<p>Track competitors → Write summary emails</p>
+</li>
+</ul>
+<p>That’s it. One input. One output. One workflow.</p>
+<p>Once that’s working, you can layer on complexity.</p>
+<p>[</p>
+<p><img alt="Workflows Should Be Logical - Friday Distraction from #HR Bartender" src="https://substackcdn.com/image/fetch/$s_!Q143!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed7c4e86-69a8-4f35-ac38-49b627d78b77_560x316.jpeg" title="Workflows Should Be Logical - Friday Distraction from #HR Bartender" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!Q143!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fed7c4e86-69a8-4f35-ac38-49b627d78b77_560x316.jpeg)</p>
+<h2 id="mistake-2-skipping-the-manual-version-first">Mistake #2: Skipping The Manual Version First</h2>
+<p>Let’s be honest.</p>
+<p>Automation is exciting and manual work is boring. Everyone wants to build the robot before they’ve done the job themselves.</p>
+<p>But if you don’t know what “good” looks like manually, your agent will produce garbage automatically. And you won’t even know it’s garbage until you’ve wasted hours building the wrong thing.</p>
+<p>So, before you automate ANYTHING, do it manually 3-5 times minimum.</p>
+<p>Here’s the process:</p>
+<ol>
+<li>
+<p>Execute the workflow manually using ChatGPT/Claude</p>
+</li>
+<li>
+<p>Refine your prompts until the outputs are 80% ready to publish</p>
+</li>
+<li>
+<p>Document the exact steps you take (the prompts, the edits, the decision points)</p>
+</li>
+<li>
+<p>THEN turn that documented workflow into an automated agent</p>
+</li>
+</ol>
+<p>Why does this work?</p>
+<p>Because the hardest part of building an agent is knowing what to automate.</p>
+<p>If you manually create 5 trend-based LinkedIn posts using ChatGPT and they’re all mediocre, your agent will produce mediocre posts automatically. But if you manually create 5 posts, refine your prompts, test different frameworks, and get outputs that are 80% ready to ship...</p>
+<p>Now you’re ready to automate.</p>
+<p>The manual version is your blueprint for the automated version.</p>
+<p>Think about it: You wouldn’t hire someone to do a job you’ve never done yourself (or don’t know how to evaluate). Same principle here.</p>
+<h2 id="mistake-3-picking-the-wrong-first-use-case">Mistake #3: Picking The Wrong First Use Case</h2>
+<p>Here’s the thing:</p>
+<p>Complex use cases require too many moving parts and break constantly. Which is a recipe for getting frustrated and giving up.</p>
+<p>To avoid this, your first agent should pass the “3 Questions Test”:</p>
+<p><strong>Question 1: Can I describe the input in one sentence?</strong></p>
+<ul>
+<li>
+<p>Good: “RSS feeds from 10 industry news sources”</p>
+</li>
+<li>
+<p>Bad: “Everything happening in my industry”</p>
+</li>
+</ul>
+<p><strong>Question 2: Can I describe the output in one sentence?</strong></p>
+<ul>
+<li>
+<p>Good: “5 LinkedIn 150 word post drafts”</p>
+</li>
+<li>
+<p>Bad: “High-quality content that performs well”</p>
+</li>
+</ul>
+<p><strong>Question 3: Can I manually follow the steps for this workflow?</strong></p>
+<ul>
+<li>
+<p>Good: Yes, I can scan trends and write 5 posts using ChatGPT</p>
+</li>
+<li>
+<p>Bad: No, this requires 2 hours of research and analysis before I know what to do.</p>
+</li>
+</ul>
+<p>If you can’t clearly define the input, output, and manual workflow, your agent will fail.</p>
+<h2 id="mistake-4-treating-agents-like-code">Mistake #4: Treating Agents Like Code</h2>
+<p>When most people hear “automation” or “agent,” they imagine lines of code, APIs, JSON files, and technical complexity.</p>
+<p>You psych yourself out before you even start. You assume you need technical skills you don’t have, so you never take the first step.</p>
+<p>The tools we’re using are designed for non-technical people. So, you’re not writing code. You’re writing instructions and then connecting those instructions with boxes and lines. If you can build a flowchart, you can build an agent.</p>
+<p>In fact, here’s the entire Trend-Jacking Agent workflow in plain English:</p>
+<ol>
+<li>
+<p>Search the web for trending news in your niche.</p>
+</li>
+<li>
+<p>Filter the results down to the top 5 most-relevant stories.</p>
+</li>
+<li>
+<p>Turn each story into a LinkedIn post.</p>
+</li>
+<li>
+<p>Send an email with all 5 posts.</p>
+</li>
+<li>
+<p>Pick the best posts, edit, and copy-paste to LinkedIn.</p>
+</li>
+</ol>
+<p>Easy.</p>
+<p>The best thing you can do when building your first agent, is to write down (in natural language) what you want your agent to do. And if you want to get better at writing instructions, try explaining how to make a PB&amp;J 👇</p>
+<h2 id="mistake-5-human-out-of-the-loop">Mistake #5: Human “Out” Of The Loop</h2>
+<p>AI is really good, but it’s not perfect.</p>
+<p>And when it makes mistakes, those mistakes go live in public. One weird post can damage your credibility faster than 100 good posts can build it. Which is why we recommend you always build a human review step into your agent.</p>
+<p>Your agent should deliver content TO you (via email, Slack, Notion), not FOR you (directly to social media—UNLESS you’re 100% in your agent).</p>
+<p>Your goal is to remove the tedious, repetitive work so you can focus on the high-leverage stuff.</p>
+<h2 id="thats-it">That’s it!</h2>
+<p>Now that you know the 5 biggest mistakes, you can avoid all of them.</p>
+<p>And tomorrow, I’m going to show you exactly why Trend-Jacking is the perfect first AI Content Agent to build.</p>
+<p>See you then.</p>
+<p>Mitch</p>
+<hr />
+<p><em>PS..Want to skip ahead and grab the entire n8n mini-course?</em></p>
+<p><em>You can. It’s available in your Founding Member hub.</em></p>
+<p><em><a href="https://writewithai.substack.com/p/founding-member-hub">Click here grab the Trend Jacking Mini-Course.</a></em></p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!kCZt!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fc882ad82-3ae7-4294-889e-4770ee5e6d72_1560x1174.png" /></p>
+<p>](https://writewithai.substack.com/p/founding-member-hub)</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

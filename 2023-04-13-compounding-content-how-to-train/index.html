@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Compounding Content: How To Train ChatGPT To Write New Medium Articles Based On Old Ones - My Articles</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Articles</a>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#compounding-content-how-to-train-chatgpt-to-write-new-medium-articles-based-on-old-ones" class="nav-link">Compounding Content: How To Train ChatGPT To Write New Medium Articles Based On Old Ones</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#hey-there-digital-writers" class="nav-link">Hey there, Digital Writers!</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#i-have-been-writing-on-medium-since-2018" class="nav-link">I have been writing on Medium since 2018.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#the-problem-is-repetitive-volume-is-taxing" class="nav-link">The problem is: Repetitive volume is taxing.</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#how-to-get-leverage-on-your-content-library" class="nav-link">How To Get Leverage On Your Content Library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-1-ask-chatgpt-what-it-knows-about-you-your-content-library" class="nav-link">Step 1: Ask ChatGPT What It Knows About You &amp; Your Content Library</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-2-train-chatgpt-on-5-of-your-previously-published-medium-articles" class="nav-link">Step 2: Train ChatGPT On ~5 Of Your (Previously Published) Medium Articles</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-3-give-chatgpt-a-new-title-ask-it-to-write-a-net-new-article-based-on-the-previous-3-5-articles-you-trained-it-on" class="nav-link">Step 3: Give ChatGPT A New Title &amp; Ask It To Write A Net-New Article Based On The Previous 3-5 Articles You Trained It On</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#step-4-your-human-edits" class="nav-link">Step 4: Your (Human) Edits</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#the-unfair-advantage-of-writing-with-ai" class="nav-link">The Unfair Advantage Of Writing With AI</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="compounding-content-how-to-train-chatgpt-to-write-new-medium-articles-based-on-old-ones">Compounding Content: How To Train ChatGPT To Write New Medium Articles Based On Old Ones</h1>
+<p><em>This is how you really start "compounding" your content library.</em></p>
+<p><strong>Author:</strong> Nicolas Cole<br />
+<strong>Date:</strong> 2023-04-13</p>
+<hr />
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!dy-g!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0de61873-bc2d-4fdd-87af-80c0353057c4_1914x1074.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!dy-g!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0de61873-bc2d-4fdd-87af-80c0353057c4_1914x1074.png)</p>
+<h1 id="hey-there-digital-writers">Hey there, Digital Writers!</h1>
+<p>The hardest part of writing online is <em>starting</em>.</p>
+<p>I don’t mean this in the cliché sort of “You just have to start!” inspiring-Instagram-quote-graphic sort of way. <strong>I mean this in a very literal, mathematical way.</strong> The hardest part of writing online is <em>starting</em> because on Day 1 you have no historical data. You have no content library. You have nothing “before” to inform what you can or should write “next.”</p>
+<p>But once you <em>start</em> writing… you begin to gather data.</p>
+<p>And once you start gathering data, you pick up momentum.</p>
+<h1 id="i-have-been-writing-on-medium-since-2018">I have been writing on Medium since 2018.</h1>
+<p>Over the past ~6 years I have probably written over 1,000 articles on that platform.</p>
+<p>Some were original articles. Some were republished snippets from <a href="https://www.ship30for30.com">Ship 30 for 30</a> blog posts. And some were viral Twitter Threads (aka: proven data points) expanded into longer-form assets. At my height in 2019/2020, <a href="https://twitter.com/Nicolascole77/status/1409572338870501381">I was earning over $100,000 per year writing on Medium</a>—most of which I’d say, by that point, was just “republishing” and “recreating” old material. Not bad!</p>
+<p><a href="https://twitter.com/Nicolascole77/status/1409572338870501381">https://twitter.com/Nicolascole77/status/1409572338870501381</a></p>
+<p>To this day, I still don’t see very many Digital Writers (if any) doing this with their content libraries. Most think that in order to keep building their web of content, they must constantly create net-new material (which, especially over 5+ years, is very mentally taxing). When in reality, the secret to “niche dominance” as a writer is to hammer home “the hits” over and over again.</p>
+<h3 id="for-example">For example:</h3>
+<p>There’s a reason why Ryan Holiday continues to pump out “X Stoicism Lessons From Marcus Aurelius” despite the fact he’s written multiple books, thousands of articles, and hundreds of YouTube videos and podcast episodes on the exact same topic.</p>
+<p>Because volume one 1 topic is how you become known for a niche you own.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!mmqW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e41d6ba-3fe8-41cc-b7e3-c16aacab396b_1402x526.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!mmqW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e41d6ba-3fe8-41cc-b7e3-c16aacab396b_1402x526.png)</p>
+<p><em><a href="https://ryanholiday.medium.com/19-rules-for-a-better-life-from-marcus-aurelius-541dbb50efdd">Link to Ryan’s article, if you’d like to read.</a></em></p>
+<h1 id="the-problem-is-repetitive-volume-is-taxing">The problem is: Repetitive volume is taxing.</h1>
+<p>It’s not easy to write about the same thing over and over again—especially over a 5 or 10 year time horizon. (That said, we do have a great framework for this, called <a href="https://ship.samcart.com/products/start-writing-with-chatgpt-webinar/">The Lean Writing Method</a>. But even still, “patience” is the key skill to build.)</p>
+<p>Even for someone like me, who has thousands of articles to pull from, it’s mentally taxing to go back through my entire library on Medium, find a topic I can “rewrite,” and then block the time to do it (considering how many other projects I am working on, and how much other writing I do on Twitter, LinkedIn, in the Ship 30 for 30 ecosystem, etc.).</p>
+<p>So, while it’s a great strategy… it still takes time, and has to be done manually.</p>
+<p>Until now.</p>
+<h1 id="how-to-get-leverage-on-your-content-library">How To Get Leverage On Your Content Library</h1>
+<p>What I am about to share with you can work for any platform, based on any historical content library.</p>
+<p>But for the sake of clarity, I am going to keep this explanation specific to Medium.</p>
+<p>It recently occurred to me that the manual process I was going through to “rewrite” old Medium articles into net-new content was the exact sort of thing ChatGPT should be able to do quite well. Even if it’s not perfect, it should be able to get me 80% of the way there—and then I can take it across the finish line.</p>
+<p>This writing strategy + ChatGPT = massive compounding on your content.</p>
+<p>Here’s how it works, and how I trained ChatGPT to write net-new Medium articles based on my historical library.</p>
+<h1 id="step-1-ask-chatgpt-what-it-knows-about-you-your-content-library">Step 1: Ask ChatGPT What It Knows About You &amp; Your Content Library</h1>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!o3wW!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19630430-4ea4-46c5-9701-6480a1cefc3d_1604x950.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!o3wW!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F19630430-4ea4-46c5-9701-6480a1cefc3d_1604x950.png)</p>
+<p><em>I recommend using ChatGPT-4 for this, since “4” clearly provides more nuanced thinking than ChatGPT-3 or 3.5.</em></p>
+<p>The first step is to do a quick audit.</p>
+<ul>
+<li>
+<p>Tell ChatGPT your name (because it will be able to find your Medium profile).</p>
+</li>
+<li>
+<p>Give it 1-2 sentences of context about you.</p>
+</li>
+<li>
+<p>Tell it what you are ultimately going to train it to “do.”</p>
+</li>
+<li>
+<p>Ask it to give you a recap of what it “knows,” to start.</p>
+</li>
+</ul>
+<p>The reason I did this first was because I wanted to see what ChatGPT’s limitations were. The biggest one is that it only has access to content/information up until September 2021. <em>But that’s ok.</em></p>
+<p>ChatGPT also won’t be able to give you any engagement data. So I removed those questions I asked from the prompt below for you.</p>
+<h3 id="heres-the-prompt">Here’s the prompt:</h3>
+<p><em>My name is {First/Last Name} and I have been writing on Medium since roughly {Year}.</em></p>
+<p><em>I would like to train you to help me write new articles on Medium based on my extensive library.</em></p>
+<p><em>But first, I'd like to know what working knowledge you have of me and my content library on Medium.</em></p>
+<p><em>Could you please tell me what you know about me, and what you know about my Medium library (the more specific the better).</em></p>
+<p><em>Some things I'm looking for, specifically:</em></p>
+<ul>
+<li>
+<p><em>My top 10 highest-performing topics</em></p>
+</li>
+<li>
+<p><em>Which topics you have the most knowledge of from my content library, specifically</em></p>
+</li>
+</ul>
+<h1 id="step-2-train-chatgpt-on-5-of-your-previously-published-medium-articles">Step 2: Train ChatGPT On ~5 Of Your (Previously Published) Medium Articles</h1>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!mqpU!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8cf8b0e5-3bca-47a7-960a-3335192cc0bd_1586x1038.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!mqpU!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8cf8b0e5-3bca-47a7-960a-3335192cc0bd_1586x1038.png)</p>
+<p>Even though ChatGPT “can read” all the articles you’ve written online, I’ve learned it’s best to reel in its thinking and give it some more specific direction.</p>
+<p>To generate the best output here, I’ve learned that you need to do a bit of the curation yourself.</p>
+<p><em>(<strong>*Pro Tip:</strong> If you really want to execute this strategy, and add even more leverage, hire a VA to organize your Medium articles into “piles” based on overarching topic—so you don’t have to spend time searching for related content.)</em></p>
+<p>Here’s how it works:</p>
+<ul>
+<li>
+<p>Choose an overarching topic (like Writing or Productivity or Wellness, etc.)</p>
+</li>
+<li>
+<p>Find ~5 Medium articles you’ve written under that umbrella topic (the more related, the better.)</p>
+</li>
+<li>
+<p>Feed them to ChatGPT to “learn.”</p>
+</li>
+</ul>
+<p>The goal here is to give ChatGPT direction, and help give it some pattern recognition around the different ways you, specifically, write about this topic. You can feed it more than 5 articles, if you’d like, but I’d recommend at least 3-5 to start.</p>
+<h3 id="share-the-article-title-copypaste-the-entire-articles-text-into-chatgpt">Share the article title &amp; copy/paste the entire article’s text into ChatGPT.</h3>
+<p>After each article, ChatGPT’s response is going to make it seem like it’s “ready to start writing.” But instead, tell it to hold on (“Let me give you a few more articles so that you have more information to pull from”) and keep uploading article after article.</p>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!fbx7!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe7b033f2-b5ee-49bb-bd89-e1a664f6cfa3_1602x982.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!fbx7!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe7b033f2-b5ee-49bb-bd89-e1a664f6cfa3_1602x982.png)</p>
+<h3 id="heres-the-initial-prompt">Here’s the initial prompt:</h3>
+<p><em>I am going to feed you 5 of my Medium articles on the topic of {TOPIC}, so that you can learn my writing style, etc.</em></p>
+<p><em>Then, after you've studied these first 5 Medium articles, I will give you an idea and you will write a Medium article for me.</em></p>
+<p><em>Are you ready for the first article?</em></p>
+<h1 id="step-3-give-chatgpt-a-new-title-ask-it-to-write-a-net-new-article-based-on-the-previous-3-5-articles-you-trained-it-on">Step 3: Give ChatGPT A New Title &amp; Ask It To Write A Net-New Article Based On The Previous 3-5 Articles You Trained It On</h1>
+<p>[</p>
+<p><img alt="" src="https://substackcdn.com/image/fetch/$s_!akYE!,w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcce55204-7de5-4100-b174-f789e1c22742_1626x1460.png" /></p>
+<p>](https://substackcdn.com/image/fetch/$s_!akYE!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fcce55204-7de5-4100-b174-f789e1c22742_1626x1460.png)</p>
+<p>Here’s where things start getting wild—and you begin to unlock a whole new level of “compounding” on your content.</p>
+<p>Once you’ve trained ChatGPT on 3-5 articles on a specific topic, all you have to do is give it a net-new title and it will write a ~7/10 Medium article for you on that topic.</p>
+<h3 id="heres-the-prompt_1">Here’s the prompt:</h3>
+<p><em>Great. Now, with the above {X} examples, please write an 800-word Medium article based on this headline, adopting my same writing style from Medium:</em></p>
+<p><em>Title: {TITLE}</em></p>
+<h1 id="step-4-your-human-edits">Step 4: Your (Human) Edits</h1>
+<p>I imagine in the next ~5 years, AI will get smart enough that we won’t need to do this last step—but for now, we do.</p>
+<p>One of ChatGPT’s biggest flaws to-date is its inability to execute formatting well. I’m guessing part of this is the training model itself (just needs to get smarter and get trained on more content over the next few years) and part of this is the plain-text window ChatGPT operates within. Either way, not a big deal—and if you’ve taken <a href="https://www.ship30for30.com">Ship 30 for 30</a>, then you know how to execute the Digital Writing Formatting Fundamentals to quickly clean this up!</p>
+<p>It’s easier to show you how to do this via video versus text, so I went ahead and created a quick YouTube video to show you the final output ChatGPT gave me (in this series of prompts) and then how I cleaned it up and turned it into a finished article in less than ~10 minutes.</p>
+<h3 id="heres-the-walkthrough-video">Here’s the walkthrough video:</h3>
+<h1 id="the-unfair-advantage-of-writing-with-ai">The Unfair Advantage Of Writing With AI</h1>
+<p>If you want a glimpse into what the future of writing, specifically Digital Writing, looks like over the next ~5 years, this is it.</p>
+<p>Most “legacy” writers have no concept of “writing net-new content based on old content.” In fact, most “legacy” writers go to great lengths to explain why this isn’t “real writing.” (Note: most of them also don’t make any money from their writing, so keep that in mind.)</p>
+<p>Digital Writers, however, are more open to new-age strategies that allow them to get “leverage” on their content. This is our primary mantra in Ship 30 for 30: <strong>“The more you write, the more you write.”</strong> Because the more you write, the more data you gather, the more you know “what works,” the more you write things that resonate with readers, the more readers you reach, the more successful products you launch &amp; books you sell, and the more money you make as a writer. Pretty straightforward.</p>
+<p>But Digital Writers that understand how to write with AI? <em>Game over.</em></p>
+<p>This is exponential leverage.</p>
+<p>And eventually (within the next ~5 years), AI will be smart enough, and capable of being trained with a series of simple prompts, to effortlessly create 9/10 content based on your historical content library.</p>
+<p>Which is why I started all of this by saying… the hardest part of writing is <em>starting</em>.</p>
+<p>Because having a library of content is like having an oil rig.</p>
+<p>So start building yours, ASAP!</p>
+<p>Chat soon,</p>
+<p><em><a href="https://twitter.com/Nicolascole77">Nicolas Cole</a></em></p>
+<p><em><a href="https://twitter.com/dickiebush">Dickie Bush</a></em></p>
+<p><em>Co-Creators of <a href="https://www.ship30for30.com/">Ship 30 for 30</a>.</em></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
