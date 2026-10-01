@@ -1,0 +1,17 @@
+/* Clean reading pages: no giant article navigation tree */
+.md-sidebar--primary { display:none; }
+.md-content { max-width:100%; }
+.md-content__inner { max-width:820px; margin:0 auto; padding:70px 34px 100px !important; }
+.md-content h1 { font-family:Georgia,"Times New Roman",serif; font-weight:500; letter-spacing:-.035em; font-size:clamp(2.5rem,5vw,4.6rem); line-height:1.02; margin-bottom:30px; }
+.md-content h2 { font-family:Georgia,"Times New Roman",serif; font-weight:500; letter-spacing:-.02em; margin-top:2.5em; }
+.md-content p,.md-content li { font-size:1.02rem; line-height:1.85; }
+.md-content p { margin:1.25em 0; }
+.md-content a { color:#b88d3c; }
+[data-md-color-scheme="slate"] .md-content__inner { color:#e9e7e1; }
+[data-md-color-scheme="slate"] .md-content a { color:#d4b06b; }
+[data-md-color-scheme="slate"] .md-content h1,
+[data-md-color-scheme="slate"] .md-content h2,
+[data-md-color-scheme="slate"] .md-content h3 { color:#f4f1e9; }
+@media (max-width:900px) {
+  .md-content__inner { padding:45px 22px 70px !important; }
+}
