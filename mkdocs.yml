@@ -1,0 +1,4 @@
+site_name: My Articles
+
+nav:
+  - Home: index.md
